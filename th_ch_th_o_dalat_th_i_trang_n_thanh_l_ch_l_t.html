@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="meta-page-title">THẠCH THẢO DALAT — Thời Trang Nữ Thanh Lịch &amp; Hiện Đại Đà Lạt</title>
+  <meta name="description" id="meta-page-description" content="THẠCH THẢO DALAT — Cửa hàng thời trang nữ thanh lịch, hiện đại tại Đà Lạt. Tuyển chọn thiết kế tinh tế, đồng kiểm 100%, đổi size trong 14 ngày.">
+
+  <!-- Open Graph Metadata mặc định & được cập nhật động theo từng sản phẩm -->
+  <meta property="og:title" id="og-title" content="THẠCH THẢO DALAT — Thời Trang Nữ Tươi Trẻ &amp; Thanh Lịch">
+  <meta property="og:description" id="og-description" content="Khám phá bộ sưu tập thời trang nữ ngọt ngào, hiện đại tại THẠCH THẢO DALAT. Đồng kiểm toàn quốc, đổi size 14 ngày.">
+  <meta property="og:image" id="og-image" content="https://placehold.co/1200x630/FF8FA3/FFFFFF?text=THACH+THAO+DALAT">
+  <meta property="og:url" id="og-url" content="">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --text-plum: #3B282E;
+      --peach-pink: #FF8599;
+      --pastel-pink: #FFE8ED;
+      --coral-orange: #FF785A;
+      --cream-yellow: #FFF6E0;
+      --milk-white: #FFFDFB;
+      --rose-red: #E63963;
+      --rose-red-hover: #CC2952;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--milk-white);
+      background-image: radial-gradient(circle at top right, #FFF2F5 0%, #FFFDFB 45%, #FFF9EB 100%);
+      color: var(--text-plum);
+      overflow-x: hidden;
+    }
+    .font-editorial {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .unified-photo-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      background: linear-gradient(180deg, #FFF5F7 0%, #FFF9EE 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .unified-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      transition: transform 0.35s ease;
+    }
+    .group:hover .unified-photo-frame img {
+      transform: scale(1.04);
+    }
+    .tiktok-card {
+      background: #FFFFFF;
+      border-radius: 18px;
+      border: 1px solid #FADCE3;
+      transition: all 0.25s ease;
+    }
+    .tiktok-card:hover {
+      border-color: #FF8599;
+      box-shadow: 0 12px 28px -8px rgba(230, 57, 99, 0.16);
+      transform: translateY(-3px);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @keyframes slideUpModal {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-share-modal {
+      animation: slideUpModal 0.22s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between antialiased selection:bg-[#FF8599] selection:text-white">
+
+  <!-- ==================== TOP BAR TƯƠI VUI ==================== -->
+  <div class="bg-gradient-to-r from-[#FF758F] via-[#FF8599] to-[#FF9472] text-white text-[11px] sm:text-xs shadow-2xs">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span class="font-semibold"><i class="fa-solid fa-truck-fast text-[#FFF6E0] mr-1.5"></i>Giao hàng toàn quốc • Đồng kiểm trước khi thanh toán</span>
+        <span class="hidden md:inline text-white/50">|</span>
+        <span class="hidden md:inline text-white/95">Đổi size dễ dàng trong 14 ngày</span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto">
+        <span class="hidden sm:inline text-white/95"><i class="fa-solid fa-location-dot text-[#FFF6E0] mr-1"></i>Chợ Đà Lạt Khu A</span>
+        <a href="tel:0792888009" class="bg-white/20 hover:bg-white/30 px-2.5 py-0.5 rounded-full text-white font-bold transition">
+          <i class="fa-solid fa-phone mr-1"></i>0792888009
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER TRẮNG SỮA & HỒNG ĐÀO ==================== -->
+  <header class="sticky top-0 z-40 bg-[#FFFDFB]/95 backdrop-blur-md border-b border-[#FADCE3] shadow-2xs">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-3">
+      <!-- Logo Độc Quyền THẠCH THẢO DALAT -->
+      <button type="button" onclick="navigateTo('home')" class="flex items-center gap-2.5 text-left shrink-0 cursor-pointer group">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-[#FF758F] via-[#FF8FA3] to-[#FF9B71] flex items-center justify-center relative overflow-hidden shadow-sm border border-white">
+          <svg viewBox="0 0 64 64" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="52" height="52" rx="14" stroke="#FFF6E0" stroke-width="1.6" stroke-opacity="0.85"/>
+            <path d="M16 21H34M25 21V44" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M32 21H50M41 21V44" stroke="#FFF6E0" stroke-width="2.8" stroke-linecap="round"/>
+            <circle cx="33" cy="46" r="2.2" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div>
+          <div class="text-sm sm:text-lg font-extrabold tracking-tight text-[#3B282E] leading-none flex items-center gap-1.5">
+            <span>THẠCH THẢO DALAT</span>
+            <span class="bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white text-[9px] font-bold px-2 py-0.5 rounded-full tracking-wider uppercase shadow-2xs">Official</span>
+          </div>
+          <div class="text-[10px] text-[#8A6872] font-medium mt-0.5">Thời trang nữ ngọt ngào &amp; thanh lịch • Đà Lạt</div>
+        </div>
+      </button>
+
+      <!-- Thanh tìm kiếm nhanh (Desktop) -->
+      <div class="hidden lg:flex flex-1 max-w-md mx-2">
+        <div class="relative w-full">
+          <input type="text" id="header-quick-search" onkeyup="handleHeaderSearch(event)" placeholder="Tìm áo khoác, váy đầm, set bộ, áo len..." class="w-full bg-[#FFF2F5] border border-[#FADCE3] focus:border-[#FF8599] focus:bg-white rounded-full pl-4 pr-11 py-2 text-xs text-[#3B282E] placeholder-[#9E7B85] outline-none transition">
+          <button type="button" onclick="triggerHeaderSearch()" class="absolute right-1 top-1 bottom-1 px-3.5 rounded-full bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white text-xs font-bold cursor-pointer shadow-2xs">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Điều Hướng -->
+      <nav class="hidden md:flex items-center gap-5 text-xs sm:text-sm font-semibold text-[#5C414A]">
+        <button type="button" onclick="navigateTo('home')" class="nav-link hover:text-[#E63963] transition cursor-pointer" data-page="home">Trang chủ</button>
+        <button type="button" onclick="navigateTo('products')" class="nav-link hover:text-[#E63963] transition cursor-pointer" data-page="products">Sản phẩm</button>
+        <button type="button" onclick="navigateTo('about')" class="nav-link hover:text-[#E63963] transition cursor-pointer" data-page="about">Giới thiệu</button>
+        <button type="button" onclick="navigateTo('contact')" class="nav-link hover:text-[#E63963] transition cursor-pointer" data-page="contact">Liên hệ</button>
+      </nav>
+
+      <!-- Hành động phải -->
+      <div class="flex items-center gap-2">
+        <button type="button" onclick="navigateTo('products')" class="lg:hidden p-2.5 rounded-full bg-[#FFE8ED] hover:bg-[#FFD6DF] text-[#E63963] text-xs cursor-pointer" title="Tìm kiếm">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button type="button" onclick="openCartDrawer()" class="relative flex items-center gap-2 bg-gradient-to-r from-[#FF758F] to-[#FF8A65] hover:opacity-95 text-white px-3.5 py-2 rounded-full text-xs font-bold shadow-xs transition cursor-pointer">
+          <i class="fa-solid fa-bag-shopping text-[#FFF6E0]"></i>
+          <span class="hidden sm:inline">Giỏ hàng</span>
+          <span id="cart-count-badge" class="bg-[#E63963] text-white text-[10px] font-extrabold px-1.5 py-0.5 rounded-full min-w-[18px] text-center border border-white/40">0</span>
+        </button>
+
+        <!-- Nút Quản trị chỉ hiện khi đã đăng nhập Admin -->
+        <button type="button" id="header-admin-btn" onclick="navigateTo('admin')" class="hidden items-center gap-1.5 bg-[#E63963] hover:bg-[#CC2952] text-white px-3 py-2 rounded-full text-xs font-bold cursor-pointer shadow-xs">
+          <i class="fa-solid fa-sliders"></i>
+          <span class="hidden sm:inline">Quản trị</span>
+        </button>
+
+        <!-- Nút mở menu Mobile -->
+        <button type="button" onclick="toggleMobileNav()" class="md:hidden p-2.5 rounded-full bg-[#FFE8ED] text-[#E63963] cursor-pointer">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-nav-menu" class="hidden md:hidden bg-[#FFFDFB] border-t border-[#FADCE3] px-4 py-3 space-y-1.5 text-sm font-semibold">
+      <button type="button" onclick="navigateTo('home'); toggleMobileNav()" class="block w-full text-left py-2 text-[#3B282E] hover:text-[#E63963]">Trang chủ</button>
+      <button type="button" onclick="navigateTo('products'); toggleMobileNav()" class="block w-full text-left py-2 text-[#3B282E] hover:text-[#E63963]">Tất cả sản phẩm</button>
+      <button type="button" onclick="navigateTo('about'); toggleMobileNav()" class="block w-full text-left py-2 text-[#3B282E] hover:text-[#E63963]">Giới thiệu THẠCH THẢO DALAT</button>
+      <button type="button" onclick="navigateTo('contact'); toggleMobileNav()" class="block w-full text-left py-2 text-[#3B282E] hover:text-[#E63963]">Liên hệ cửa hàng</button>
+    </div>
+  </header>
+
+  <!-- ==================== NỘI DUNG CÁC TRANG (SPA) ==================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-4 sm:py-6">
+
+    <!-- ==================== 1. TRANG CHỦ ==================== -->
+    <section id="page-home" class="space-y-5 sm:space-y-7">
+
+      <!-- Banner Thương Hiệu THẠCH THẢO DALAT (Hồng Đào - Vàng Kem - Cam San Hô) -->
+      <div class="bg-gradient-to-br from-[#FFE8ED] via-[#FFF6E5] to-[#FFE2D9] rounded-3xl border border-[#FAD2DC] p-4 sm:p-7 shadow-xs relative overflow-hidden">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 relative z-10">
+          <div class="flex items-center gap-3.5 sm:gap-5">
+            <div class="w-15 h-15 sm:w-18 sm:h-18 rounded-2xl bg-gradient-to-br from-[#FF758F] to-[#FF8A65] flex items-center justify-center shrink-0 border-2 border-white shadow-sm px-3 py-3">
+              <span class="font-editorial text-2xl sm:text-3xl font-bold text-white">TT</span>
+            </div>
+            <div class="space-y-1.5">
+              <div class="flex flex-wrap items-center gap-2">
+                <h1 class="text-lg sm:text-2xl font-extrabold text-[#3B282E]">THẠCH THẢO DALAT — Thời Trang Nữ Tươi Trẻ</h1>
+                <span class="bg-white/90 text-[#E63963] border border-[#F8C6D2] text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-2xs">Chính hãng Đà Lạt</span>
+              </div>
+              <p class="text-xs sm:text-sm text-[#6B4E57] max-w-2xl">
+                Bộ sưu tập thời trang nữ ngọt ngào, thanh lịch và hiện đại: áo khoác, váy đầm, set bộ, áo len tuyển chọn kỹ từng đường may. Hỗ trợ kiểm tra hàng trước khi thanh toán.
+              </p>
+              <div class="flex flex-wrap items-center gap-3 text-[11px] sm:text-xs text-[#7D5E67] pt-0.5">
+                <span class="text-[#F59E0B] font-bold bg-white/80 px-2 py-0.5 rounded-full"><i class="fa-solid fa-star mr-1"></i>4.9/5 Đánh giá</span>
+                <span class="bg-white/80 px-2 py-0.5 rounded-full"><i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i>Đồng kiểm 100%</span>
+                <span class="bg-white/80 px-2 py-0.5 rounded-full"><i class="fa-solid fa-rotate-left text-[#E63963] mr-1"></i>Đổi size 14 ngày</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2.5 shrink-0">
+            <button type="button" onclick="navigateTo('about')" class="px-4 py-2.5 rounded-xl bg-white/90 hover:bg-white text-[#3B282E] border border-[#F5C6D2] text-xs font-bold cursor-pointer transition shadow-2xs">
+              Giới thiệu cửa hàng
+            </button>
+            <a href="https://zalo.me/0792888009" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white text-xs font-bold transition shadow-xs">
+              <i class="fa-solid fa-comment-dots mr-1"></i>Chat tư vấn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thanh Danh Mục Ngang & Tab Lọc Nhanh -->
+      <div class="bg-white/95 rounded-2xl border border-[#FADCE3] p-3 sm:p-4 space-y-3 shadow-2xs">
+        <div class="flex items-center justify-between gap-2 border-b border-[#FBE8ED] pb-2.5">
+          <div class="flex items-center gap-2 sm:gap-3 overflow-x-auto no-scrollbar text-xs sm:text-sm font-bold">
+            <button type="button" onclick="setHomeQuickTab('all', this)" class="home-tab-btn px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white cursor-pointer shrink-0 shadow-2xs">Tất cả sản phẩm</button>
+            <button type="button" onclick="setHomeQuickTab('featured', this)" class="home-tab-btn px-3.5 py-1.5 rounded-full bg-[#FFF2F5] text-[#6B4E57] hover:bg-[#FFE3EA] cursor-pointer shrink-0">Bán chạy / Nổi bật</button>
+            <button type="button" onclick="setHomeQuickTab('new', this)" class="home-tab-btn px-3.5 py-1.5 rounded-full bg-[#FFF2F5] text-[#6B4E57] hover:bg-[#FFE3EA] cursor-pointer shrink-0">Hàng mới về</button>
+            <button type="button" onclick="setHomeQuickTab('sale', this)" class="home-tab-btn px-3.5 py-1.5 rounded-full bg-[#FFF2F5] text-[#6B4E57] hover:bg-[#FFE3EA] cursor-pointer shrink-0">Đang giảm giá</button>
+          </div>
+          <button type="button" onclick="navigateTo('products')" class="text-xs font-bold text-[#E63963] hover:underline shrink-0 cursor-pointer">
+            Bộ lọc nâng cao <i class="fa-solid fa-sliders ml-1"></i>
+          </button>
+        </div>
+
+        <!-- Danh mục quần áo động -->
+        <div id="home-categories-list" class="flex items-center gap-2 overflow-x-auto no-scrollbar"></div>
+      </div>
+
+      <!-- Lưới Sản Phẩm Chính Trên Trang Chủ -->
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 id="home-main-heading" class="text-base sm:text-xl font-extrabold text-[#3B282E] flex items-center gap-2">
+            <span class="w-1.5 h-5 rounded-full bg-gradient-to-b from-[#E63963] to-[#FF8A65] inline-block"></span>
+            <span>Bộ Sưu Tập Dành Cho Nàng</span>
+          </h2>
+          <span id="home-product-counter" class="text-xs font-bold text-[#E63963] bg-[#FFE8ED] px-3 py-1 rounded-full">0 mẫu</span>
+        </div>
+
+        <div id="home-main-products-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4"></div>
+
+        <div class="text-center pt-2">
+          <button type="button" onclick="navigateTo('products')" class="inline-flex items-center gap-2 bg-white hover:bg-gradient-to-r hover:from-[#FF758F] hover:to-[#FF8A65] text-[#E63963] hover:text-white border border-[#F5B8C6] font-bold text-xs sm:text-sm px-6 py-3 rounded-full transition cursor-pointer shadow-2xs">
+            <span>Xem tất cả sản phẩm &amp; Lọc theo Size</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. TRANG GIỚI THIỆU THẠCH THẢO DALAT ==================== -->
+    <section id="page-about" class="hidden max-w-5xl mx-auto space-y-6">
+      <div class="bg-white rounded-3xl border border-[#FADCE3] overflow-hidden shadow-xs">
+        <div class="bg-gradient-to-r from-[#FF758F] via-[#FF8FA3] to-[#FF9B71] text-white p-6 sm:p-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-8 space-y-3">
+            <span class="inline-block bg-white/25 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Câu Chuyện Thương Hiệu
+            </span>
+            <h1 class="font-editorial text-3xl sm:text-4xl font-bold leading-tight">
+              THẠCH THẢO DALAT — Tôn Vinh Vẻ Đẹp Ngọt Ngào &amp; Thanh Lịch
+            </h1>
+            <p class="text-white/95 text-xs sm:text-sm leading-relaxed">
+              Khởi nguồn từ trung tâm thành phố ngàn hoa Đà Lạt (Chợ Đà Lạt Khu A), THẠCH THẢO DALAT ra đời với tâm huyết mang đến những thiết kế thời trang nữ tinh tế, tươi trẻ và chuẩn phom dáng người Việt với mức giá hợp lý nhất.
+            </p>
+          </div>
+          <div class="md:col-span-4 flex justify-center">
+            <div class="w-40 h-40 sm:w-44 sm:h-44 rounded-3xl bg-white/20 backdrop-blur-xs border border-white/50 flex flex-col items-center justify-center text-center p-4 shadow-sm">
+              <div class="font-editorial text-4xl font-bold text-white">TT</div>
+              <div class="text-xs font-bold text-[#FFF6E0] tracking-widest mt-1">THẠCH THẢO DALAT</div>
+              <div class="text-[10px] text-white/90 mt-1">Đà Lạt • Lâm Đồng</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 space-y-6 text-xs sm:text-sm text-[#5C414A] leading-relaxed">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-5 rounded-2xl bg-[#FFF5F7] space-y-2 border border-[#FADCE3]">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF758F] to-[#FF8A65] text-white flex items-center justify-center text-base shadow-2xs">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+              <h3 class="font-extrabold text-[#3B282E] text-sm">Tuyển Chọn Chất Liệu Kỹ Lưỡng</h3>
+              <p class="text-xs text-[#6B4E57]">Mỗi mẫu áo khoác, váy đầm hay set bộ đều được kiểm tra chất vải mềm mịn, đứng phom và đường may sắc sảo trước khi lên kệ.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#FFF8EB] space-y-2 border border-[#F7E3B5]">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#FF785A] to-[#FFB347] text-white flex items-center justify-center text-base shadow-2xs">
+                <i class="fa-solid fa-box-open"></i>
+              </div>
+              <h3 class="font-extrabold text-[#3B282E] text-sm">Đồng Kiểm Hàng 100%</h3>
+              <p class="text-xs text-[#6B4E57]">Khách hàng đặt mua trực tuyến được mở gói hàng kiểm tra đúng mẫu, đúng màu sắc và kích cỡ trước khi thanh toán tiền mặt (COD).</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#FFF5F7] space-y-2 border border-[#FADCE3]">
+              <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#E63963] to-[#FF8599] text-white flex items-center justify-center text-base shadow-2xs">
+                <i class="fa-solid fa-arrows-rotate"></i>
+              </div>
+              <h3 class="font-extrabold text-[#3B282E] text-sm">Hỗ Trợ Đổi Size Trong 14 Ngày</h3>
+              <p class="text-xs text-[#6B4E57]">Đội ngũ tư vấn trực tuyến 24/24 qua Zalo &amp; Hotline 0792888009 luôn sẵn sàng hỗ trợ chọn số đo chuẩn chiều cao, cân nặng.</p>
+            </div>
+          </div>
+
+          <div class="border-t border-[#FBE8ED] pt-5 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <div class="font-extrabold text-[#3B282E]">Ghé thăm hoặc đặt hàng trực tuyến cùng THẠCH THẢO DALAT ngay hôm nay!</div>
+              <div class="text-xs text-[#7D5E67]">Địa chỉ: Chợ Đà Lạt Khu A, Phường 1, TP. Đà Lạt • Hotline: 0792888009</div>
+            </div>
+            <div class="flex gap-2.5">
+              <button type="button" onclick="navigateTo('home')" class="bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-bold text-xs px-5 py-3 rounded-xl cursor-pointer shadow-xs">
+                Xem Sản Phẩm Ngay
+              </button>
+              <button type="button" onclick="navigateTo('contact')" class="bg-[#FFE8ED] hover:bg-[#FFD6DF] text-[#E63963] font-bold text-xs px-5 py-3 rounded-xl cursor-pointer">
+                Liên Hệ Cửa Hàng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. TRANG TẤT CẢ SẢN PHẨM ==================== -->
+    <section id="page-products" class="hidden space-y-4">
+      <div class="bg-white rounded-2xl p-4 sm:p-5 border border-[#FADCE3] space-y-3.5 shadow-2xs">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h1 class="text-lg sm:text-2xl font-extrabold text-[#3B282E]">Tất Cả Sản Phẩm Thời Trang</h1>
+          <span id="catalog-total-label" class="text-xs font-bold text-[#E63963] bg-[#FFE8ED] px-3 py-1 rounded-full">0 sản phẩm</span>
+        </div>
+
+        <!-- Thanh tìm kiếm & Bộ lọc -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5 text-xs">
+          <div class="lg:col-span-2 relative">
+            <input type="text" id="catalog-search" oninput="resetAndFilterCatalog()" placeholder="Tìm tên áo, váy, quần, chất liệu..." class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl pl-9 pr-3 py-2.5 outline-none focus:border-[#FF8599]">
+            <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-[#C28E9C]"></i>
+          </div>
+
+          <select id="catalog-filter-category" onchange="resetAndFilterCatalog()" class="bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2.5 font-semibold text-[#3B282E] outline-none">
+            <option value="ALL">Danh mục: Tất cả</option>
+          </select>
+
+          <select id="catalog-filter-size" onchange="resetAndFilterCatalog()" class="bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2.5 font-semibold text-[#3B282E] outline-none">
+            <option value="ALL">Kích cỡ: Tất cả</option>
+            <option value="S">Size S</option>
+            <option value="M">Size M</option>
+            <option value="L">Size L</option>
+            <option value="XL">Size XL</option>
+            <option value="XXL">Size XXL</option>
+            <option value="Freesize">Freesize</option>
+          </select>
+
+          <select id="catalog-sort-price" onchange="resetAndFilterCatalog()" class="bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2.5 font-semibold text-[#3B282E] outline-none">
+            <option value="newest">Sắp xếp: Mới nhất</option>
+            <option value="price-asc">Giá: Thấp → Cao</option>
+            <option value="price-desc">Giá: Cao → Thấp</option>
+          </select>
+        </div>
+
+        <!-- Khoảng giá -->
+        <div class="flex flex-wrap items-center gap-2 text-xs pt-1 border-t border-[#FBE8ED]">
+          <span class="font-bold text-[#6B4E57]">Khoảng giá (VNĐ):</span>
+          <input type="number" id="catalog-min-price" placeholder="Từ (VD: 100000)" class="w-32 sm:w-36 bg-[#FFF7F9] border border-[#FADCE3] rounded-lg px-2.5 py-1.5 outline-none">
+          <span>-</span>
+          <input type="number" id="catalog-max-price" placeholder="Đến (VD: 600000)" class="w-32 sm:w-36 bg-[#FFF7F9] border border-[#FADCE3] rounded-lg px-2.5 py-1.5 outline-none">
+          <button type="button" onclick="resetAndFilterCatalog()" class="bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white font-bold px-3.5 py-1.5 rounded-lg cursor-pointer">Áp dụng</button>
+          <button type="button" onclick="clearCatalogFilters()" class="text-[#8A6872] hover:text-[#E63963] font-semibold px-2 py-1.5 cursor-pointer">Xóa lọc</button>
+        </div>
+      </div>
+
+      <!-- Lưới sản phẩm -->
+      <div id="catalog-products-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 sm:gap-4"></div>
+
+      <!-- Phân trang -->
+      <div id="catalog-pagination" class="flex items-center justify-center gap-2 pt-3"></div>
+    </section>
+
+    <!-- ==================== 4. TRANG CHI TIẾT SẢN PHẨM ==================== -->
+    <section id="page-detail" class="hidden space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <button type="button" onclick="navigateTo('home')" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#3B282E] hover:text-[#E63963] cursor-pointer">
+          <i class="fa-solid fa-arrow-left text-[#E63963]"></i> Quay lại cửa hàng THẠCH THẢO DALAT
+        </button>
+        <div id="detail-breadcrumb-slug" class="text-[11px] text-[#9E7B85] font-mono truncate max-w-xs sm:max-w-md"></div>
+      </div>
+      <div id="product-detail-container" class="bg-white rounded-3xl border border-[#FADCE3] p-4 sm:p-7 shadow-xs"></div>
+    </section>
+
+    <!-- ==================== 5. TRANG LIÊN HỆ ==================== -->
+    <section id="page-contact" class="hidden max-w-4xl mx-auto space-y-6">
+      <div class="bg-white rounded-3xl border border-[#FADCE3] p-6 sm:p-8 space-y-6 shadow-xs">
+        <div class="space-y-1.5 border-b border-[#FBE8ED] pb-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#E63963]">Hỗ Trợ Khách Hàng</span>
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-[#3B282E]">Liên Hệ THẠCH THẢO DALAT</h1>
+          <p class="text-xs sm:text-sm text-[#6B4E57]">Tư vấn chọn size chuẩn chiều cao cân nặng, kiểm tra tình trạng còn hàng và hỗ trợ đổi trả nhanh chóng.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-[#FFE8ED] text-[#E63963] flex items-center justify-center shrink-0"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="font-bold text-[#3B282E]">Địa chỉ cửa hàng &amp; kho</div>
+                <div class="text-[#6B4E57]">Chợ Đà Lạt Khu A, Phường 1, TP. Đà Lạt, Tỉnh Lâm Đồng</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-[#FFE8ED] text-[#E63963] flex items-center justify-center shrink-0"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="font-bold text-[#3B282E]">Hotline &amp; Zalo đặt hàng</div>
+                <a href="tel:0792888009" class="text-[#E63963] font-extrabold hover:underline">0792888009</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-[#FFF6E0] text-[#FF785A] flex items-center justify-center shrink-0"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <div class="font-bold text-[#3B282E]">Giờ làm việc</div>
+                <div class="text-[#6B4E57]">Tư vấn trực tuyến 24/24 • Kho hàng &amp; Web: 08:00 - 18:00</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gradient-to-br from-[#FFF2F5] to-[#FFF8E8] rounded-2xl p-5 border border-[#FADCE3] space-y-3">
+            <div class="font-extrabold text-[#3B282E]">Kênh Kết Nối Trực Tiếp</div>
+            <p class="text-xs text-[#6B4E57]">Nhắn tin ngay qua Zalo hoặc Fanpage để được gửi video/ảnh thật sản phẩm:</p>
+            <div class="flex flex-col gap-2.5 pt-1">
+              <a href="https://zalo.me/0792888009" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl transition shadow-2xs">
+                <i class="fa-solid fa-comment-dots"></i> Nhắn tin Zalo (0792888009)
+              </a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF758F] to-[#FF8A65] hover:opacity-95 text-white font-bold py-3 rounded-xl transition shadow-2xs">
+                <i class="fa-brands fa-facebook"></i> Fanpage THẠCH THẢO DALAT
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. TRANG ĐẶT HÀNG & XÁC NHẬN ĐƠN HÀNG ==================== -->
+    <section id="page-checkout" class="hidden max-w-3xl mx-auto space-y-5">
+      <div id="checkout-form-wrapper" class="bg-white rounded-3xl border border-[#FADCE3] p-5 sm:p-8 space-y-5 shadow-xs">
+        <div class="border-b border-[#FBE8ED] pb-3">
+          <h1 class="text-xl sm:text-2xl font-extrabold text-[#3B282E]">Thông Tin Nhận Hàng (COD)</h1>
+          <p class="text-xs text-[#7D5E67] mt-1">Vui lòng điền chính xác thông tin để THẠCH THẢO DALAT giao hàng tận nơi cho bạn.</p>
+        </div>
+
+        <div id="checkout-items-summary" class="bg-[#FFF7F9] rounded-2xl p-4 border border-[#FADCE3] space-y-2 text-xs"></div>
+
+        <form id="real-order-form" onsubmit="handleOrderSubmit(event)" class="space-y-3.5 text-xs sm:text-sm">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="font-bold text-[#3B282E] block mb-1">Họ và tên người nhận *</label>
+              <input type="text" id="ord-name" required placeholder="Nhập họ và tên" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF8599]">
+            </div>
+            <div>
+              <label class="font-bold text-[#3B282E] block mb-1">Số điện thoại *</label>
+              <input type="tel" id="ord-phone" required pattern="[0-9]{9,11}" placeholder="VD: 0912345678" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF8599]">
+            </div>
+          </div>
+          <div>
+            <label class="font-bold text-[#3B282E] block mb-1">Địa chỉ giao hàng chi tiết *</label>
+            <input type="text" id="ord-address" required placeholder="Số nhà, tên đường, Phường/Xã, Quận/Huyện, Tỉnh/Thành phố" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF8599]">
+          </div>
+          <div>
+            <label class="font-bold text-[#3B282E] block mb-1">Ghi chú (Chiều cao, cân nặng để shop kiểm tra size)</label>
+            <textarea id="ord-note" rows="2" placeholder="VD: Mình cao 1m58 nặng 50kg, shop kiểm tra giúp mình size M nhé" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3.5 py-2 outline-none focus:border-[#FF8599]"></textarea>
+          </div>
+          <div class="bg-[#FFF8EB] border border-[#F7E3B5] rounded-xl p-3 text-xs text-[#6B4E57]">
+            <i class="fa-solid fa-shield-halved text-[#FF785A] mr-1"></i> Thanh toán tiền mặt khi nhận hàng (COD) — Quý khách được kiểm tra hàng trước khi trả tiền.
+          </div>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button type="button" onclick="navigateTo('home')" class="px-4 py-3 rounded-xl bg-[#FFE8ED] hover:bg-[#FFD6DF] text-[#E63963] font-bold text-xs cursor-pointer">
+              Chọn thêm mẫu khác
+            </button>
+            <button type="submit" id="btn-confirm-order" class="flex-1 bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-extrabold text-xs sm:text-sm py-3.5 px-6 rounded-xl shadow-sm cursor-pointer transition">
+              Đặt Hàng Ngay
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Trang xác nhận đơn hàng sau khi đặt -->
+      <div id="order-confirmation-view" class="hidden bg-white rounded-3xl border border-[#FADCE3] p-6 sm:p-10 text-center space-y-4 shadow-xs">
+        <div class="w-16 h-16 rounded-full bg-[#FFE8ED] text-[#E63963] flex items-center justify-center text-3xl mx-auto">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h2 class="text-2xl font-extrabold text-[#3B282E]">Đặt Hàng Thành Công!</h2>
+        <div id="order-confirmation-details" class="max-w-md mx-auto bg-[#FFF7F9] border border-[#FADCE3] rounded-2xl p-4 text-left text-xs space-y-1.5 text-[#5C414A]"></div>
+        <p class="text-xs text-[#7D5E67]">Đơn hàng đang ở trạng thái <strong>Chờ xác nhận</strong>. Nhân viên THẠCH THẢO DALAT sẽ liên hệ xác nhận trong thời gian sớm nhất.</p>
+        <div class="flex flex-wrap justify-center gap-3 pt-2">
+          <a id="confirm-zalo-btn" href="https://zalo.me/0792888009" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-5 py-3 rounded-xl">
+            <i class="fa-solid fa-comment-dots mr-1.5"></i>Nhắn Zalo Xác Nhận Nhanh
+          </a>
+          <button type="button" onclick="navigateTo('home')" class="bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white font-bold text-xs px-5 py-3 rounded-xl cursor-pointer">
+            Tiếp Tục Mua Sắm
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. TRANG QUẢN TRỊ RIÊNG (#admin) ==================== -->
+    <section id="page-admin" class="hidden space-y-6">
+      <!-- Form Đăng Nhập Admin Supabase Auth -->
+      <div id="admin-login-box" class="max-w-md mx-auto bg-white rounded-3xl border border-[#FADCE3] p-6 sm:p-8 shadow-sm space-y-4">
+        <div class="text-center space-y-1">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#FF758F] to-[#FF8A65] text-white flex items-center justify-center mx-auto text-lg mb-2 shadow-xs">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h1 class="text-xl font-extrabold text-[#3B282E]">Đăng Nhập Quản Trị Kho</h1>
+          <p class="text-xs text-[#7D5E67]">Dành riêng cho quản lý cửa hàng THẠCH THẢO DALAT</p>
+        </div>
+
+        <form onsubmit="handleAdminSupabaseLogin(event)" class="space-y-3 text-xs">
+          <div>
+            <label class="font-bold block mb-1">Email quản trị viên</label>
+            <input type="email" id="admin-email-input" required placeholder="admin@example.com" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF8599]">
+          </div>
+          <div>
+            <label class="font-bold block mb-1">Mật khẩu</label>
+            <input type="password" id="admin-pass-input" required placeholder="Nhập mật khẩu quản trị" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3.5 py-2.5 outline-none focus:border-[#FF8599]">
+          </div>
+          <button type="submit" id="btn-admin-login" class="w-full bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-bold py-3 rounded-xl cursor-pointer transition shadow-xs">
+            Đăng Nhập Hệ Thống
+          </button>
+        </form>
+
+        <div class="pt-2 border-t border-[#FBE8ED] flex items-center justify-between text-[11px] text-[#7D5E67]">
+          <button type="button" onclick="openConfigModal()" class="text-[#E63963] font-semibold hover:underline cursor-pointer">
+            <i class="fa-solid fa-gear mr-1"></i>Cài đặt kết nối
+          </button>
+          <button type="button" onclick="navigateTo('home')" class="hover:underline cursor-pointer">Quay lại cửa hàng</button>
+        </div>
+      </div>
+
+      <!-- Bảng Điều Khiển Quản Trị Sản Phẩm -->
+      <div id="admin-dashboard-box" class="hidden space-y-6">
+        <div class="bg-gradient-to-r from-[#FF758F] via-[#FF8FA3] to-[#FF9B71] text-white rounded-3xl p-4 sm:p-6 flex flex-wrap items-center justify-between gap-3 shadow-xs">
+          <div>
+            <div class="text-[11px] uppercase tracking-wider text-[#FFF6E0] font-bold">Quản Lý Sản Phẩm Trực Tuyến</div>
+            <h1 class="text-lg sm:text-2xl font-extrabold mt-0.5">Kho Hàng THẠCH THẢO DALAT</h1>
+            <div id="admin-logged-email" class="text-xs text-white/90 mt-0.5"></div>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <button type="button" onclick="exportProductsBackupJSON()" class="bg-white/20 hover:bg-white/30 text-white px-3 py-2 rounded-xl cursor-pointer font-semibold">
+              <i class="fa-solid fa-download mr-1"></i>Sao lưu JSON
+            </button>
+            <button type="button" onclick="exportProductsBackupCSV()" class="bg-white/20 hover:bg-white/30 text-white px-3 py-2 rounded-xl cursor-pointer font-semibold">
+              <i class="fa-solid fa-file-csv mr-1"></i>Xuất CSV
+            </button>
+            <button type="button" onclick="openConfigModal()" class="bg-white/20 hover:bg-white/30 text-[#FFF6E0] px-3 py-2 rounded-xl cursor-pointer font-semibold">
+              <i class="fa-solid fa-gear mr-1"></i>Kết nối
+            </button>
+            <button type="button" onclick="handleAdminLogout()" class="bg-white text-[#E63963] hover:bg-[#FFF5F7] font-bold px-3.5 py-2 rounded-xl cursor-pointer shadow-2xs">
+              Đăng xuất
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Form Thêm / Sửa Sản Phẩm -->
+          <form id="admin-product-form" onsubmit="handleSaveProductToSupabase(event)" class="lg:col-span-5 bg-white rounded-3xl border border-[#FADCE3] p-5 space-y-3.5 text-xs shadow-2xs">
+            <div class="flex items-center justify-between border-b border-[#FBE8ED] pb-2">
+              <h2 id="admin-form-heading" class="font-extrabold text-base text-[#3B282E]">Đăng Sản Phẩm Mới</h2>
+              <button type="button" id="btn-cancel-edit" onclick="resetAdminProductForm()" class="hidden text-[#E63963] font-bold hover:underline cursor-pointer">Hủy sửa</button>
+            </div>
+            <input type="hidden" id="edit-product-id">
+
+            <div>
+              <label class="font-bold block mb-1">Tên sản phẩm *</label>
+              <input type="text" id="prod-name" required placeholder="VD: Áo Khoác Dạ Tweed Cổ Tròn" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]">
+            </div>
+
+            <div class="grid grid-cols-2 gap-2.5">
+              <div>
+                <label class="font-bold block mb-1">Giá bán (VNĐ) *</label>
+                <input type="number" id="prod-price" required min="1000" placeholder="350000" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]">
+              </div>
+              <div>
+                <label class="font-bold block mb-1">Giá gốc (VNĐ)</label>
+                <input type="number" id="prod-original-price" min="0" placeholder="480000" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-2.5">
+              <div>
+                <label class="font-bold block mb-1">Danh mục quần áo *</label>
+                <input type="text" id="prod-category" list="category-suggestions" required placeholder="VD: Áo Khoác" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]">
+                <datalist id="category-suggestions">
+                  <option value="Áo Khoác">
+                  <option value="Váy & Đầm">
+                  <option value="Set Bộ">
+                  <option value="Áo Len Đà Lạt">
+                  <option value="Quần Âu & Jean">
+                  <option value="Áo Sơ Mi & Áo Kiểu">
+                  <option value="Phụ Kiện">
+                </datalist>
+              </div>
+              <div>
+                <label class="font-bold block mb-1">Số lượng tồn kho *</label>
+                <input type="number" id="prod-stock" required min="0" value="10" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]">
+              </div>
+            </div>
+
+            <div>
+              <label class="font-bold block mb-1">Kích cỡ có sẵn *</label>
+              <div class="flex flex-wrap gap-2.5 bg-[#FFF7F9] p-2.5 rounded-xl border border-[#FADCE3]">
+                <label class="inline-flex items-center gap-1"><input type="checkbox" class="prod-size-chk accent-[#E63963]" value="S" checked> S</label>
+                <label class="inline-flex items-center gap-1"><input type="checkbox" class="prod-size-chk accent-[#E63963]" value="M" checked> M</label>
+                <label class="inline-flex items-center gap-1"><input type="checkbox" class="prod-size-chk accent-[#E63963]" value="L" checked> L</label>
+                <label class="inline-flex items-center gap-1"><input type="checkbox" class="prod-size-chk accent-[#E63963]" value="XL"> XL</label>
+                <label class="inline-flex items-center gap-1"><input type="checkbox" class="prod-size-chk accent-[#E63963]" value="XXL"> XXL</label>
+                <label class="inline-flex items-center gap-1"><input type="checkbox" class="prod-size-chk accent-[#E63963]" value="Freesize"> Freesize</label>
+              </div>
+            </div>
+
+            <div>
+              <label class="font-bold block mb-1">Màu sắc (Cách nhau bởi dấu phẩy) *</label>
+              <input type="text" id="prod-colors" required placeholder="VD: Đen, Kem sữa, Nâu tây" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]">
+            </div>
+
+            <div>
+              <label class="font-bold block mb-1">Mô tả chất liệu &amp; thông số size</label>
+              <textarea id="prod-description" rows="3" placeholder="Mô tả chất vải, form dáng, gợi ý chiều cao cân nặng từng size..." class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none focus:border-[#FF8599]"></textarea>
+            </div>
+
+            <div class="space-y-1.5">
+              <label class="font-bold block">Hình ảnh sản phẩm (Chọn nhiều ảnh từ điện thoại/máy tính) *</label>
+              <input type="file" id="prod-images-input" accept="image/*" multiple onchange="previewSelectedImages(event)" class="w-full text-[11px] bg-[#FFF7F9] border border-[#FADCE3] rounded-xl p-2">
+              <div id="admin-images-preview" class="flex flex-wrap gap-2 pt-1"></div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 pt-1">
+              <label class="inline-flex items-center gap-1.5 font-semibold">
+                <input type="checkbox" id="prod-featured" class="accent-[#E63963]"> Bán chạy / Nổi bật
+              </label>
+              <label class="inline-flex items-center gap-1.5 font-semibold">
+                <input type="checkbox" id="prod-is-new" checked class="accent-[#E63963]"> Hàng mới về
+              </label>
+              <label class="inline-flex items-center gap-1.5 font-semibold">
+                <input type="checkbox" id="prod-visible" checked class="accent-[#E63963]"> Hiển thị bán
+              </label>
+            </div>
+
+            <button type="submit" id="btn-save-product" class="w-full bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-extrabold py-3 rounded-xl cursor-pointer transition shadow-xs">
+              <i class="fa-solid fa-cloud-arrow-up mr-1.5"></i>Đăng Sản Phẩm Lên Cửa Hàng
+            </button>
+          </form>
+
+          <!-- Danh sách & Quản lý tồn kho -->
+          <div class="lg:col-span-7 bg-white rounded-3xl border border-[#FADCE3] p-5 space-y-4 shadow-2xs">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#FBE8ED] pb-3">
+              <h2 class="font-extrabold text-base text-[#3B282E]">Sản Phẩm Đang Bán (<span id="admin-total-products">0</span>)</h2>
+              <button type="button" onclick="fetchProductsFromSupabase(true)" class="text-xs font-bold text-[#E63963] hover:underline cursor-pointer">
+                <i class="fa-solid fa-rotate mr-1"></i>Làm mới
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+              <input type="text" id="admin-search-input" oninput="renderAdminProductTable()" placeholder="Tìm kiếm tên sản phẩm..." class="bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none">
+              <select id="admin-filter-cat" onchange="renderAdminProductTable()" class="bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 outline-none">
+                <option value="ALL">Danh mục: Tất cả</option>
+              </select>
+            </div>
+
+            <div id="admin-products-container" class="space-y-2.5 max-h-[640px] overflow-y-auto pr-1"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER HỒNG PASTEL & KEM ẤM ==================== -->
+  <footer class="bg-gradient-to-b from-[#FFF2F5] to-[#FFE4EC] text-[#5C414A] border-t border-[#FAD2DC] mt-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pb-6 border-b border-[#F5C6D2] text-xs">
+        <div class="space-y-2">
+          <div class="text-base font-extrabold text-[#3B282E] tracking-wide">THẠCH THẢO <span class="text-[#E63963]">DALAT</span></div>
+          <p class="text-[#6B4E57] leading-relaxed">Thương hiệu thời trang nữ ngọt ngào, tươi trẻ &amp; thanh lịch tại Đà Lạt. Cập nhật thiết kế mới mỗi ngày, hỗ trợ đồng kiểm trước khi thanh toán.</p>
+        </div>
+        <div class="space-y-1.5">
+          <div class="font-bold text-[#3B282E] uppercase tracking-wider">Thông Tin Cửa Hàng</div>
+          <div><i class="fa-solid fa-location-dot text-[#E63963] mr-1.5"></i>Chợ Đà Lạt Khu A, Tỉnh Lâm Đồng</div>
+          <div><i class="fa-solid fa-phone text-[#FF785A] mr-1.5"></i>Hotline: <a href="tel:0792888009" class="text-[#E63963] font-bold">0792888009</a></div>
+          <div><i class="fa-regular fa-clock text-[#E63963] mr-1.5"></i>Hỗ trợ 24/24 • Kho: 08:00 - 18:00</div>
+        </div>
+        <div class="space-y-2">
+          <div class="font-bold text-[#3B282E] uppercase tracking-wider">Danh Mục Trang</div>
+          <div class="flex flex-wrap gap-3 text-[#6B4E57] font-semibold">
+            <button type="button" onclick="navigateTo('home')" class="hover:text-[#E63963] cursor-pointer">Trang chủ</button>
+            <button type="button" onclick="navigateTo('products')" class="hover:text-[#E63963] cursor-pointer">Sản phẩm</button>
+            <button type="button" onclick="navigateTo('about')" class="hover:text-[#E63963] cursor-pointer">Giới thiệu</button>
+            <button type="button" onclick="navigateTo('contact')" class="hover:text-[#E63963] cursor-pointer">Liên hệ</button>
+            <button type="button" onclick="navigateTo('admin')" class="hover:text-[#E63963] cursor-pointer">Quản trị kho</button>
+          </div>
+        </div>
+      </div>
+      <div class="pt-4 flex flex-wrap items-center justify-between gap-2 text-[11px] text-[#7D5E67]">
+        <span>© 2026 THẠCH THẢO DALAT. All rights reserved.</span>
+        <span>Đồng kiểm 100% • Đổi size trong 14 ngày.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 2 NÚT LIÊN HỆ NHANH GÓC DƯỚI ==================== -->
+  <div class="fixed bottom-4 right-4 z-40 flex flex-col gap-2">
+    <a href="https://zalo.me/0792888009" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs px-3.5 py-2.5 rounded-full shadow-lg transition">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span>Chat Zalo</span>
+    </a>
+    <a href="tel:0792888009" class="flex items-center gap-2 bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-bold text-xs px-3.5 py-2.5 rounded-full shadow-lg transition">
+      <i class="fa-solid fa-phone"></i>
+      <span>Gọi ngay</span>
+    </a>
+  </div>
+
+  <!-- ==================== MODAL CHIA SẺ SẢN PHẨM (THẠCH THẢO DALAT) ==================== -->
+  <div id="product-share-modal" onclick="if(event.target === this) closeShareModal()" class="hidden fixed inset-0 z-50 bg-[#3B282E]/50 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-[#FFFDFB] w-full sm:max-w-lg rounded-t-3xl sm:rounded-3xl overflow-hidden shadow-2xl border border-[#FADCE3] animate-share-modal">
+      <!-- Header Modal -->
+      <div class="px-5 py-4 bg-gradient-to-r from-[#FF758F] via-[#FF8FA3] to-[#FF9B71] text-white flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-share-nodes text-[#FFF6E0]"></i>
+          <span class="font-extrabold text-sm tracking-wide">Chia Sẻ Sản Phẩm • THẠCH THẢO DALAT</span>
+        </div>
+        <button type="button" onclick="closeShareModal()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center cursor-pointer transition">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Nội dung sản phẩm chia sẻ -->
+      <div class="p-4 sm:p-6 space-y-4 max-h-[85vh] overflow-y-auto">
+        <!-- Thẻ xem trước sản phẩm trực tiếp từ Supabase -->
+        <div class="flex gap-3.5 p-3 rounded-2xl bg-[#FFF5F7] border border-[#FADCE3]">
+          <img id="share-modal-img" src="" alt="" class="w-20 h-24 sm:w-24 sm:h-28 rounded-xl object-contain bg-white border border-[#FADCE3] shrink-0">
+          <div class="flex-1 min-w-0 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] font-bold uppercase tracking-wider text-[#E63963]">THẠCH THẢO DALAT</div>
+              <h3 id="share-modal-name" class="font-extrabold text-sm sm:text-base text-[#3B282E] line-clamp-2 mt-0.5"></h3>
+              <p id="share-modal-desc" class="text-[11px] text-[#7D5E67] line-clamp-2 mt-1"></p>
+            </div>
+            <div class="flex items-baseline gap-2 pt-1.5">
+              <span id="share-modal-price" class="font-extrabold text-base text-[#E63963]"></span>
+              <span id="share-modal-orig-price" class="text-xs text-[#A68A93] line-through"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Đường dẫn riêng của sản phẩm -->
+        <div class="space-y-1.5">
+          <label class="text-[11px] font-bold uppercase tracking-wider text-[#7D5E67] block">Đường dẫn riêng của sản phẩm</label>
+          <div class="flex items-center gap-2 bg-[#FFF7F9] border border-[#FADCE3] rounded-xl p-1.5 pl-3">
+            <input type="text" id="share-modal-url" readonly class="flex-1 bg-transparent text-xs font-mono text-[#5C414A] outline-none select-all">
+            <button type="button" onclick="copyShareProductLink()" class="bg-gradient-to-r from-[#FF758F] to-[#FF8A65] hover:opacity-95 text-white text-xs font-bold px-3.5 py-2 rounded-lg shrink-0 cursor-pointer transition">
+              <i class="fa-regular fa-copy mr-1"></i>Sao chép
+            </button>
+          </div>
+        </div>
+
+        <!-- Các lựa chọn chia sẻ nhanh -->
+        <div class="space-y-2">
+          <div class="text-[11px] font-bold uppercase tracking-wider text-[#7D5E67]">Chia sẻ nhanh qua</div>
+          <div class="grid grid-cols-3 gap-2.5 text-xs font-bold">
+            <button type="button" onclick="shareViaFacebook()" class="flex flex-col items-center justify-center gap-1.5 p-3 rounded-2xl bg-[#1877F2]/10 hover:bg-[#1877F2]/15 text-[#1877F2] border border-[#1877F2]/20 cursor-pointer transition">
+              <i class="fa-brands fa-facebook text-xl"></i>
+              <span>Facebook</span>
+            </button>
+
+            <button type="button" onclick="shareViaZalo()" class="flex flex-col items-center justify-center gap-1.5 p-3 rounded-2xl bg-blue-50 hover:bg-blue-100 text-blue-600 border border-blue-200 cursor-pointer transition">
+              <span class="w-6 h-6 rounded-full bg-blue-600 text-white text-[10px] font-extrabold flex items-center justify-center">Zalo</span>
+              <span>Zalo</span>
+            </button>
+
+            <button type="button" onclick="shareViaNativeSystem()" class="flex flex-col items-center justify-center gap-1.5 p-3 rounded-2xl bg-[#FFE8ED] hover:bg-[#FFD6DF] text-[#E63963] border border-[#FAD2DC] cursor-pointer transition">
+              <i class="fa-solid fa-arrow-up-from-bracket text-lg"></i>
+              <span>Ứng dụng khác</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hai nút sao chép chuyên dụng -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 border-t border-[#FBE8ED] text-xs font-bold">
+          <button type="button" onclick="copyShareProductLink()" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#FFF2F5] hover:bg-[#FFE3EA] text-[#3B282E] border border-[#FADCE3] cursor-pointer transition">
+            <i class="fa-solid fa-link text-[#E63963]"></i>
+            <span>Sao chép liên kết</span>
+          </button>
+          <button type="button" onclick="copyShareProductCaption()" class="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white cursor-pointer transition shadow-2xs">
+            <i class="fa-regular fa-clipboard"></i>
+            <span>Sao chép nội dung giới thiệu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== DRAWER GIỎ HÀNG ==================== -->
+  <div id="cart-drawer" class="hidden fixed inset-0 z-50 bg-[#3B282E]/50 backdrop-blur-xs flex justify-end">
+    <div class="bg-[#FFFDFB] w-full max-w-md h-full flex flex-col justify-between shadow-2xl">
+      <div class="px-5 py-4 bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white flex items-center justify-between">
+        <div class="font-extrabold text-sm"><i class="fa-solid fa-bag-shopping text-[#FFF6E0] mr-2"></i>Giỏ Hàng Của Nàng</div>
+        <button type="button" onclick="closeCartDrawer()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="cart-drawer-items" class="flex-1 overflow-y-auto p-4 space-y-3 text-xs"></div>
+      <div class="p-4 border-t border-[#FADCE3] bg-[#FFF5F7] space-y-3 text-xs">
+        <div class="flex justify-between font-extrabold text-sm text-[#3B282E]">
+          <span>Tổng cộng tạm tính:</span>
+          <span id="cart-drawer-total" class="text-[#E63963]">0đ</span>
+        </div>
+        <button type="button" onclick="proceedToCheckout()" class="w-full bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-extrabold py-3.5 rounded-xl cursor-pointer transition shadow-xs">
+          Mua Hàng Ngay (COD)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL CẤU HÌNH KẾT NỐI ==================== -->
+  <div id="modal-config-db" class="hidden fixed inset-0 z-50 bg-[#3B282E]/55 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-[#FADCE3]">
+      <div class="px-5 py-4 bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white flex items-center justify-between">
+        <div class="font-bold text-sm">Cấu Hình Kết Nối Dữ Liệu &amp; Nhận Đơn</div>
+        <button type="button" onclick="closeConfigModal()" class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center cursor-pointer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <form onsubmit="saveSupabaseConfig(event)" class="p-5 space-y-3.5 text-xs">
+        <div>
+          <label class="font-bold block mb-1">Supabase Project URL *</label>
+          <input type="url" id="cfg-supabase-url" required class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 font-mono outline-none">
+        </div>
+        <div>
+          <label class="font-bold block mb-1">Supabase Publishable / Anon Key *</label>
+          <input type="text" id="cfg-supabase-anon" required class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 font-mono outline-none">
+        </div>
+        <div>
+          <label class="font-bold block mb-1">Formspree Endpoint Nhận Đơn Hàng *</label>
+          <input type="url" id="cfg-formspree-url" required value="https://formspree.io/f/maeonlbb" class="w-full bg-[#FFF7F9] border border-[#FADCE3] rounded-xl px-3 py-2 font-mono outline-none">
+        </div>
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" onclick="closeConfigModal()" class="px-4 py-2 rounded-xl bg-[#FFF2F5] text-[#5C414A] font-bold cursor-pointer">Đóng</button>
+          <button type="submit" class="px-5 py-2 rounded-xl bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white font-bold cursor-pointer">Lưu Cài Đặt</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST THÔNG BÁO -->
+  <div id="toast-box" class="hidden fixed top-16 left-1/2 -translate-x-1/2 z-50 bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white border border-white/40 text-xs font-bold px-5 py-2.5 rounded-full shadow-xl"></div>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    const PRESET_SUPABASE_URL = "https://uchnlhdpczydkhbeoffb.supabase.co";
+    const PRESET_SUPABASE_ANON_KEY = "sb_publishable_g4BYhRmQ6vryaKM-DgM48Q_zk2thhkf";
+    const PRESET_FORMSPREE_URL = "https://formspree.io/f/maeonlbb";
+
+    const BRAND_NAME = "THẠCH THẢO DALAT";
+    const DEFAULT_SITE_TITLE = "THẠCH THẢO DALAT — Thời Trang Nữ Thanh Lịch & Hiện Đại Đà Lạt";
+    const DEFAULT_SITE_DESC = "THẠCH THẢO DALAT — Cửa hàng thời trang nữ thanh lịch, hiện đại tại Đà Lạt. Tuyển chọn thiết kế tinh tế, đồng kiểm 100%, đổi size trong 14 ngày.";
+
+    let supabaseClient = null;
+    let allProducts = [];
+    let filteredProducts = [];
+    let currentPage = 1;
+    const ITEMS_PER_PAGE = 8;
+    let cartItems = [];
+    let adminSession = null;
+    let existingEditImages = [];
+    let homeActiveTab = 'all';
+    let homeActiveCategory = 'ALL';
+    let currentShareProduct = null;
+
+    function formatCurrency(num) {
+      return Number(num || 0).toLocaleString('vi-VN') + 'đ';
+    }
+
+    function notify(msg) {
+      const box = document.getElementById('toast-box');
+      box.textContent = msg;
+      box.classList.remove('hidden');
+      clearTimeout(window._notifyTimer);
+      window._notifyTimer = setTimeout(() => box.classList.add('hidden'), 3200);
+    }
+
+    // ==================== HỆ THỐNG SLUG & LIÊN KẾT RIÊNG CHO TỪNG SẢN PHẨM ====================
+    function slugifyVietnamese(str) {
+      return String(str || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'D')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function getProductSlug(product) {
+      const baseSlug = slugifyVietnamese(product.name || 'san-pham');
+      return `${baseSlug}-${product.id}`;
+    }
+
+    function buildProductShareUrl(product) {
+      const slug = getProductSlug(product);
+      const origin = window.location.origin;
+      // Hỗ trợ cả môi trường hosting chuẩn (/product/slug) và Google Sites / iframe / file tĩnh
+      if (origin && origin.startsWith('http') && !window.location.href.includes('googleusercontent.com') && !window.location.href.includes('sites.google.com')) {
+        return `${origin}/product/${slug}`;
+      }
+      const cleanBase = window.location.href.split('#')[0].split('?')[0];
+      return `${cleanBase}?product=${encodeURIComponent(slug)}#/product/${slug}`;
+    }
+
+    function parseRequestedProductIdentifier() {
+      const pathname = window.location.pathname || '';
+      const hash = window.location.hash || '';
+      const params = new URLSearchParams(window.location.search);
+
+      // 1. Dạng /product/ten-san-pham-123
+      const pathMatch = pathname.match(/\/product\/([^\/?#]+)/i);
+      if (pathMatch && pathMatch[1]) return decodeURIComponent(pathMatch[1]);
+
+      // 2. Dạng #/product/ten-san-pham-123 hoặc #product/ten-san-pham-123
+      const hashMatch = hash.match(/#\/?product\/([^\/?#]+)/i);
+      if (hashMatch && hashMatch[1]) return decodeURIComponent(hashMatch[1]);
+
+      // 3. Dạng ?product=ten-san-pham-123 hoặc ?id=123
+      if (params.get('product')) return params.get('product');
+      if (params.get('id')) return params.get('id');
+
+      return null;
+    }
+
+    function findProductByIdentifier(identifier) {
+      if (!identifier) return null;
+      const cleanId = String(identifier).trim();
+
+      // Khớp trực tiếp ID hoặc slug đầy đủ
+      let found = allProducts.find(p => String(p.id) === cleanId || getProductSlug(p) === cleanId);
+      if (found) return found;
+
+      // Trích xuất ID ở cuối slug (ví dụ: ao-khoac-da-12 -> 12 hoặc UUID)
+      const uuidMatch = cleanId.match(/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$/i);
+      if (uuidMatch) {
+        found = allProducts.find(p => String(p.id) === uuidMatch[1]);
+        if (found) return found;
+      }
+
+      const trailingIdMatch = cleanId.match(/-([a-zA-Z0-9]+)$/);
+      if (trailingIdMatch) {
+        found = allProducts.find(p => String(p.id) === trailingIdMatch[1]);
+        if (found) return found;
+      }
+
+      return null;
+    }
+
+    // ==================== CẬP NHẬT OPEN GRAPH METADATA ĐỘNG ====================
+    function updateOpenGraphMetadata(product = null) {
+      const titleEl = document.getElementById('meta-page-title');
+      const descEl = document.getElementById('meta-page-description');
+      const ogType = document.getElementById('og-type');
+      const ogSite = document.getElementById('og-site-name');
+      const ogTitle = document.getElementById('og-title');
+      const ogDesc = document.getElementById('og-description');
+      const ogImage = document.getElementById('og-image');
+      const ogUrl = document.getElementById('og-url');
+
+      if (product && product.is_visible !== false) {
+        const images = Array.isArray(product.images) && product.images.length > 0
+          ? product.images
+          : ['https://placehold.co/800x1000/FFF2F5/3B282E?text=THACH+THAO+DALAT'];
+        const priceFormatted = formatCurrency(product.price);
+        const fullTitle = `${product.name} (${priceFormatted}) — ${BRAND_NAME}`;
+        const shortDesc = (product.description && product.description.trim())
+          ? product.description.trim().slice(0, 160)
+          : `${product.name} giá ${priceFormatted} tại ${BRAND_NAME}. Thời trang nữ thanh lịch Đà Lạt, đồng kiểm 100%, đổi size 14 ngày.`;
+        const productUrl = buildProductShareUrl(product);
+
+        document.title = fullTitle;
+        if (titleEl) titleEl.textContent = fullTitle;
+        if (descEl) descEl.setAttribute('content', shortDesc);
+        if (ogType) ogType.setAttribute('content', 'product');
+        if (ogSite) ogSite.setAttribute('content', BRAND_NAME);
+        if (ogTitle) ogTitle.setAttribute('content', fullTitle);
+        if (ogDesc) ogDesc.setAttribute('content', shortDesc);
+        if (ogImage) ogImage.setAttribute('content', images[0]);
+        if (ogUrl) ogUrl.setAttribute('content', productUrl);
+      } else {
+        document.title = DEFAULT_SITE_TITLE;
+        if (titleEl) titleEl.textContent = DEFAULT_SITE_TITLE;
+        if (descEl) descEl.setAttribute('content', DEFAULT_SITE_DESC);
+        if (ogType) ogType.setAttribute('content', 'website');
+        if (ogSite) ogSite.setAttribute('content', BRAND_NAME);
+        if (ogTitle) ogTitle.setAttribute('content', DEFAULT_SITE_TITLE);
+        if (ogDesc) ogDesc.setAttribute('content', DEFAULT_SITE_DESC);
+        if (ogImage) ogImage.setAttribute('content', 'https://placehold.co/1200x630/FF8FA3/FFFFFF?text=THACH+THAO+DALAT');
+        if (ogUrl) ogUrl.setAttribute('content', window.location.origin || window.location.href);
+      }
+    }
+
+    function syncBrowserUrlForProduct(product) {
+      try {
+        const slug = getProductSlug(product);
+        const origin = window.location.origin;
+        if (origin && origin.startsWith('http') && !window.location.href.includes('googleusercontent.com') && !window.location.href.includes('sites.google.com')) {
+          window.history.pushState({ page: 'detail', productId: product.id }, '', `/product/${slug}`);
+        } else {
+          window.history.pushState({ page: 'detail', productId: product.id }, '', `#/product/${slug}`);
+        }
+      } catch (e) {
+        // Bỏ qua nếu môi trường sandbox hạn chế pushState
+      }
+    }
+
+    function resetBrowserUrlToHome() {
+      try {
+        const origin = window.location.origin;
+        if (origin && origin.startsWith('http') && window.location.pathname.includes('/product/')) {
+          window.history.pushState({ page: 'home' }, '', '/');
+        } else if (window.location.hash.includes('product/')) {
+          window.history.pushState({ page: 'home' }, '', window.location.pathname + window.location.search);
+        }
+      } catch (e) {}
+    }
+
+    // ==================== CHỨC NĂNG CHIA SẺ SẢN PHẨM TRỰC TIẾP TỪ SUPABASE ====================
+    async function openShareModal(productId, event) {
+      if (event) {
+        event.stopPropagation();
+        event.preventDefault();
+      }
+
+      let product = allProducts.find(p => String(p.id) === String(productId));
+
+      // Lấy dữ liệu mới nhất trực tiếp từ Supabase để đảm bảo giá, tên, ảnh, trạng thái hiển thị luôn chuẩn xác
+      if (supabaseClient) {
+        try {
+          const { data, error } = await supabaseClient
+            .from('products')
+            .select('*')
+            .eq('id', productId)
+            .single();
+
+          if (!error && data) {
+            product = data;
+            const idx = allProducts.findIndex(item => String(item.id) === String(productId));
+            if (idx !== -1) allProducts[idx] = data;
+          }
+        } catch (err) {
+          console.warn('Sử dụng dữ liệu bộ nhớ đệm cho chia sẻ:', err);
+        }
+      }
+
+      if (!product || product.is_visible === false) {
+        notify('Sản phẩm này hiện đã ngừng kinh doanh hoặc không còn hiển thị.');
+        return;
+      }
+
+      currentShareProduct = product;
+
+      const images = Array.isArray(product.images) && product.images.length > 0
+        ? product.images
+        : ['https://placehold.co/600x750/FFF2F5/3B282E?text=THACH+THAO+DALAT'];
+      const price = Number(product.price) || 0;
+      const origPrice = Number(product.original_price) || 0;
+      const shareUrl = buildProductShareUrl(product);
+
+      document.getElementById('share-modal-img').src = images[0];
+      document.getElementById('share-modal-img').alt = product.name;
+      document.getElementById('share-modal-name').textContent = product.name;
+      document.getElementById('share-modal-desc').textContent = product.description || 'Thời trang nữ thanh lịch, chất liệu cao cấp tuyển chọn tại THẠCH THẢO DALAT.';
+      document.getElementById('share-modal-price').textContent = formatCurrency(price);
+
+      const origEl = document.getElementById('share-modal-orig-price');
+      if (origPrice > price) {
+        origEl.textContent = formatCurrency(origPrice);
+        origEl.classList.remove('hidden');
+      } else {
+        origEl.textContent = '';
+        origEl.classList.add('hidden');
+      }
+
+      document.getElementById('share-modal-url').value = shareUrl;
+      document.getElementById('product-share-modal').classList.remove('hidden');
+    }
+
+    function closeShareModal() {
+      document.getElementById('product-share-modal').classList.add('hidden');
+    }
+
+    function buildProductPromoText(product) {
+      const shareUrl = buildProductShareUrl(product);
+      const priceText = formatCurrency(product.price);
+      const sizesText = Array.isArray(product.sizes) && product.sizes.length ? product.sizes.join(', ') : 'Freesize';
+      const colorsText = Array.isArray(product.colors) && product.colors.length ? product.colors.join(', ') : 'Đa dạng';
+      return `✨ ${product.name.toUpperCase()} — ${BRAND_NAME}\n` +
+        `💰 Giá ưu đãi: ${priceText}\n` +
+        `🎨 Màu sắc: ${colorsText} | 📏 Size: ${sizesText}\n` +
+        `📦 Đồng kiểm toàn quốc • Đổi size trong 14 ngày\n` +
+        `👉 Xem chi tiết & đặt hàng tại: ${shareUrl}`;
+    }
+
+    async function copyTextToClipboard(text, successMessage) {
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+        } else {
+          const textArea = document.createElement('textarea');
+          textArea.value = text;
+          textArea.style.position = 'fixed';
+          textArea.style.left = '-9999px';
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textArea);
+        }
+        notify(successMessage);
+      } catch (err) {
+        notify('Không thể tự động sao chép, vui lòng sao chép thủ công!');
+      }
+    }
+
+    function copyShareProductLink() {
+      if (!currentShareProduct) return;
+      const url = buildProductShareUrl(currentShareProduct);
+      copyTextToClipboard(url, '✓ Đã sao chép liên kết sản phẩm!');
+    }
+
+    function copyShareProductCaption() {
+      if (!currentShareProduct) return;
+      const caption = buildProductPromoText(currentShareProduct);
+      copyTextToClipboard(caption, '✓ Đã sao chép nội dung giới thiệu sản phẩm!');
+    }
+
+    function shareViaFacebook() {
+      if (!currentShareProduct) return;
+      const url = encodeURIComponent(buildProductShareUrl(currentShareProduct));
+      const quote = encodeURIComponent(`${currentShareProduct.name} (${formatCurrency(currentShareProduct.price)}) — ${BRAND_NAME}`);
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${quote}`, '_blank', 'noopener,noreferrer,width=640,height=560');
+    }
+
+    function shareViaZalo() {
+      if (!currentShareProduct) return;
+      const shareUrl = buildProductShareUrl(currentShareProduct);
+      const promoText = buildProductPromoText(currentShareProduct);
+
+      // Sao chép sẵn nội dung + link để người dùng dán nhanh vào Zalo nếu Zalo Desktop không nhận tham số URL
+      copyTextToClipboard(promoText, 'Đã sao chép thông tin & mở Zalo để chia sẻ!');
+
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile && navigator.share) {
+        navigator.share({
+          title: `${currentShareProduct.name} — ${BRAND_NAME}`,
+          text: promoText,
+          url: shareUrl
+        }).catch(() => {});
+      } else {
+        window.open(`https://zalo.me/share?url=${encodeURIComponent(shareUrl)}`, '_blank', 'noopener,noreferrer');
+      }
+    }
+
+    async function shareViaNativeSystem() {
+      if (!currentShareProduct) return;
+      const shareUrl = buildProductShareUrl(currentShareProduct);
+      const shareData = {
+        title: `${currentShareProduct.name} — ${BRAND_NAME}`,
+        text: buildProductPromoText(currentShareProduct),
+        url: shareUrl
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          if (err.name !== 'AbortError') {
+            copyShareProductLink();
+          }
+        }
+      } else {
+        copyTextToClipboard(buildProductPromoText(currentShareProduct), 'Trình duyệt không hỗ trợ menu chia sẻ hệ thống — Đã sao chép nội dung & liên kết!');
+      }
+    }
+
+    // ==================== KẾT NỐI SUPABASE ====================
+    function getActiveConfig() {
+      return {
+        url: PRESET_SUPABASE_URL || localStorage.getItem('tc_sb_url') || '',
+        anon: PRESET_SUPABASE_ANON_KEY || localStorage.getItem('tc_sb_anon') || '',
+        formspree: localStorage.getItem('tc_formspree_url') || PRESET_FORMSPREE_URL
+      };
+    }
+
+    async function initSupabaseConnection() {
+      const cfg = getActiveConfig();
+      document.getElementById('cfg-supabase-url').value = cfg.url;
+      document.getElementById('cfg-supabase-anon').value = cfg.anon;
+      document.getElementById('cfg-formspree-url').value = cfg.formspree;
+
+      if (!cfg.url || !cfg.anon) return;
+
+      try {
+        supabaseClient = window.supabase.createClient(cfg.url, cfg.anon);
+        const { data: { session } } = await supabaseClient.auth.getSession();
+        handleAuthStateChange(session);
+
+        supabaseClient.auth.onAuthStateChange((_event, newSession) => {
+          handleAuthStateChange(newSession);
+        });
+
+        await fetchProductsFromSupabase(false);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    function openConfigModal() {
+      document.getElementById('modal-config-db').classList.remove('hidden');
+    }
+
+    function closeConfigModal() {
+      document.getElementById('modal-config-db').classList.add('hidden');
+    }
+
+    async function saveSupabaseConfig(e) {
+      e.preventDefault();
+      localStorage.setItem('tc_sb_url', document.getElementById('cfg-supabase-url').value.trim());
+      localStorage.setItem('tc_sb_anon', document.getElementById('cfg-supabase-anon').value.trim());
+      localStorage.setItem('tc_formspree_url', document.getElementById('cfg-formspree-url').value.trim());
+      closeConfigModal();
+      notify('Đã lưu cài đặt kết nối!');
+      await initSupabaseConnection();
+    }
+
+    async function fetchProductsFromSupabase(showToastMsg = false) {
+      if (!supabaseClient) return;
+      try {
+        const { data, error } = await supabaseClient
+          .from('products')
+          .select('*')
+          .order('created_at', { ascending: false });
+
+        if (error) throw error;
+        allProducts = data || [];
+        renderHomeSections();
+        populateCategoryFilters();
+        resetAndFilterCatalog();
+        if (adminSession) renderAdminProductTable();
+        if (showToastMsg) notify(`Đã cập nhật ${allProducts.length} sản phẩm mới nhất!`);
+      } catch (err) {
+        console.error('Lỗi tải sản phẩm:', err);
+      }
+    }
+
+    // ==================== THẺ SẢN PHẨM (CÓ NÚT CHIA SẺ SANG TRỌNG) ====================
+    function buildProductCard(p) {
+      const images = Array.isArray(p.images) && p.images.length > 0 ? p.images : ['https://placehold.co/600x750/FFF2F5/3B282E?text=THACH+THAO+DALAT'];
+      const price = Number(p.price) || 0;
+      const origPrice = Number(p.original_price) || 0;
+      const hasDiscount = origPrice > price;
+      const discountPercent = hasDiscount ? Math.round(((origPrice - price) / origPrice) * 100) : 0;
+      const outOfStock = Number(p.stock) <= 0;
+
+      return `
+        <div class="group tiktok-card overflow-hidden flex flex-col justify-between">
+          <div class="unified-photo-frame cursor-pointer border-b border-[#FBE8ED]" onclick="openProductDetailPage('${p.id}')">
+            <img src="${images[0]}" alt="${p.name}" loading="lazy">
+            
+            <!-- Nhãn góc trái -->
+            <div class="absolute top-2 left-2 flex flex-wrap gap-1 pr-10">
+              ${p.is_featured ? `<span class="bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white text-[10px] font-extrabold px-2 py-0.5 rounded-full shadow-2xs">Bán chạy</span>` : ''}
+              ${p.is_new ? `<span class="bg-[#FFF6E0] text-[#D96B27] border border-[#F7D794] text-[10px] font-bold px-2 py-0.5 rounded-full">Mới</span>` : ''}
+              ${hasDiscount ? `<span class="bg-[#FFE8ED] text-[#E63963] border border-[#F8C6D2] text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">-${discountPercent}%</span>` : ''}
+            </div>
+
+            <!-- Nút Chia Sẻ Hồng Đào tối giản góc trên bên phải -->
+            <button type="button" onclick="openShareModal('${p.id}', event)" class="absolute top-2 right-2 z-10 w-8 h-8 rounded-full bg-white/95 hover:bg-gradient-to-r hover:from-[#E63963] hover:to-[#FF785A] text-[#E63963] hover:text-white shadow-sm border border-[#FADCE3] flex items-center justify-center transition cursor-pointer" title="Chia sẻ sản phẩm" aria-label="Chia sẻ sản phẩm ${p.name}">
+              <i class="fa-solid fa-share-nodes text-xs"></i>
+            </button>
+
+            ${outOfStock ? `<div class="absolute inset-0 bg-[#3B282E]/45 flex items-center justify-center"><span class="bg-white text-[#E63963] text-xs font-extrabold px-3 py-1 rounded-full">Hết hàng</span></div>` : ''}
+          </div>
+
+          <div class="p-2.5 sm:p-3.5 flex-1 flex flex-col justify-between space-y-2">
+            <div>
+              <h3 onclick="openProductDetailPage('${p.id}')" class="font-semibold text-xs sm:text-sm text-[#3B282E] line-clamp-2 leading-snug hover:text-[#E63963] cursor-pointer">
+                ${p.name}
+              </h3>
+              <div class="flex items-center gap-1.5 text-[10px] sm:text-[11px] text-[#8A6872] mt-1">
+                <span class="text-[#F59E0B] font-bold"><i class="fa-solid fa-star"></i> 4.9</span>
+                <span>•</span>
+                <span>Còn ${p.stock} sp</span>
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-0.5">
+              <div class="flex items-baseline gap-1.5 flex-wrap">
+                <span class="font-extrabold text-sm sm:text-base text-[#E63963]">${formatCurrency(price)}</span>
+                ${hasDiscount ? `<span class="text-[11px] text-[#A68A93] line-through">${formatCurrency(origPrice)}</span>` : ''}
+              </div>
+
+              <div class="flex items-center gap-1.5">
+                <button type="button" onclick="quickAddFirstVariant('${p.id}')" ${outOfStock ? 'disabled' : ''} class="p-2 rounded-xl bg-[#FFE8ED] hover:bg-[#FFD6DF] disabled:opacity-40 text-[#E63963] text-xs cursor-pointer transition" title="Thêm vào giỏ">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+                <button type="button" onclick="openProductDetailPage('${p.id}')" class="flex-1 bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-bold text-xs py-2 rounded-xl cursor-pointer transition shadow-2xs">
+                  Mua ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function quickAddFirstVariant(productId) {
+      const product = allProducts.find(p => String(p.id) === String(productId));
+      if (!product || Number(product.stock) <= 0) return;
+
+      const size = (Array.isArray(product.sizes) && product.sizes[0]) || 'Freesize';
+      const color = (Array.isArray(product.colors) && product.colors[0]) || 'Tiêu chuẩn';
+      const img = (Array.isArray(product.images) && product.images[0]) || 'https://placehold.co/300x375/FFF2F5/3B282E?text=TT';
+
+      const existing = cartItems.find(i => i.id === product.id && i.size === size && i.color === color);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cartItems.push({ id: product.id, name: product.name, price: Number(product.price), size, color, qty: 1, img });
+      }
+      updateCartUI();
+      notify(`Đã thêm "${product.name}" (${color}, ${size}) vào giỏ!`);
+    }
+
+    function setHomeQuickTab(tab, btn) {
+      homeActiveTab = tab;
+      document.querySelectorAll('.home-tab-btn').forEach(el => {
+        el.className = 'home-tab-btn px-3.5 py-1.5 rounded-full bg-[#FFF2F5] text-[#6B4E57] hover:bg-[#FFE3EA] cursor-pointer shrink-0';
+      });
+      btn.className = 'home-tab-btn px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white cursor-pointer shrink-0 shadow-2xs';
+      renderHomeSections();
+    }
+
+    function selectHomeCategory(cat) {
+      homeActiveCategory = cat;
+      renderHomeSections();
+    }
+
+    function renderHomeSections() {
+      const visibleProducts = allProducts.filter(p => p.is_visible !== false);
+
+      // Thanh danh mục ngang
+      const cats = [...new Set(visibleProducts.map(p => p.category).filter(Boolean))];
+      const catContainer = document.getElementById('home-categories-list');
+      catContainer.innerHTML = `
+        <button type="button" onclick="selectHomeCategory('ALL')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 cursor-pointer transition ${homeActiveCategory === 'ALL' ? 'bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white shadow-2xs' : 'bg-[#FFF7F9] text-[#6B4E57] border border-[#FADCE3] hover:bg-[#FFE8ED]'}">
+          Tất cả danh mục
+        </button>
+      ` + cats.map(c => `
+        <button type="button" onclick="selectHomeCategory('${c}')" class="px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 cursor-pointer transition ${homeActiveCategory === c ? 'bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white shadow-2xs' : 'bg-[#FFF7F9] text-[#6B4E57] border border-[#FADCE3] hover:bg-[#FFE8ED]'}">
+          ${c}
+        </button>
+      `).join('');
+
+      // Lọc theo Tab & Danh mục trên Trang Chủ
+      let list = [...visibleProducts];
+      if (homeActiveCategory !== 'ALL') {
+        list = list.filter(p => p.category === homeActiveCategory);
+      }
+      if (homeActiveTab === 'featured') {
+        list = list.filter(p => p.is_featured);
+      } else if (homeActiveTab === 'new') {
+        list = list.filter(p => p.is_new);
+      } else if (homeActiveTab === 'sale') {
+        list = list.filter(p => p.original_price && Number(p.original_price) > Number(p.price));
+      }
+
+      document.getElementById('home-product-counter').textContent = `${list.length} sản phẩm`;
+      const mainGrid = document.getElementById('home-main-products-grid');
+
+      if (list.length === 0) {
+        mainGrid.innerHTML = `<div class="col-span-full bg-white rounded-2xl border border-[#FADCE3] p-8 text-center text-xs sm:text-sm text-[#8A6872]">Chưa có sản phẩm nào trong mục này.</div>`;
+      } else {
+        mainGrid.innerHTML = list.map(buildProductCard).join('');
+      }
+    }
+
+    function populateCategoryFilters() {
+      const cats = [...new Set(allProducts.map(p => p.category).filter(Boolean))];
+      const catSelect = document.getElementById('catalog-filter-category');
+      const adminCatSelect = document.getElementById('admin-filter-cat');
+
+      catSelect.innerHTML = `<option value="ALL">Danh mục: Tất cả</option>` + cats.map(c => `<option value="${c}">${c}</option>`).join('');
+      adminCatSelect.innerHTML = `<option value="ALL">Danh mục: Tất cả</option>` + cats.map(c => `<option value="${c}">${c}</option>`).join('');
+    }
+
+    function handleHeaderSearch(e) {
+      if (e.key === 'Enter') triggerHeaderSearch();
+    }
+
+    function triggerHeaderSearch() {
+      const kw = document.getElementById('header-quick-search').value.trim();
+      navigateTo('products');
+      document.getElementById('catalog-search').value = kw;
+      resetAndFilterCatalog();
+    }
+
+    // LỌC, TÌM KIẾM & PHÂN TRANG TRANG SẢN PHẨM
+    function resetAndFilterCatalog() {
+      currentPage = 1;
+      const kw = document.getElementById('catalog-search').value.trim().toLowerCase();
+      const cat = document.getElementById('catalog-filter-category').value;
+      const size = document.getElementById('catalog-filter-size').value;
+      const sort = document.getElementById('catalog-sort-price').value;
+      const minP = Number(document.getElementById('catalog-min-price').value) || 0;
+      const maxP = Number(document.getElementById('catalog-max-price').value) || Infinity;
+
+      filteredProducts = allProducts.filter(p => {
+        if (p.is_visible === false) return false;
+        if (cat !== 'ALL' && p.category !== cat) return false;
+        if (size !== 'ALL' && !(Array.isArray(p.sizes) && p.sizes.includes(size))) return false;
+        if (Number(p.price) < minP || Number(p.price) > maxP) return false;
+        if (kw && !p.name.toLowerCase().includes(kw) && !(p.description || '').toLowerCase().includes(kw)) return false;
+        return true;
+      });
+
+      if (sort === 'price-asc') filteredProducts.sort((a, b) => Number(a.price) - Number(b.price));
+      if (sort === 'price-desc') filteredProducts.sort((a, b) => Number(b.price) - Number(a.price));
+
+      renderCatalogPage();
+    }
+
+    function clearCatalogFilters() {
+      document.getElementById('catalog-search').value = '';
+      document.getElementById('catalog-filter-category').value = 'ALL';
+      document.getElementById('catalog-filter-size').value = 'ALL';
+      document.getElementById('catalog-sort-price').value = 'newest';
+      document.getElementById('catalog-min-price').value = '';
+      document.getElementById('catalog-max-price').value = '';
+      resetAndFilterCatalog();
+    }
+
+    function renderCatalogPage() {
+      const grid = document.getElementById('catalog-products-grid');
+      const totalLabel = document.getElementById('catalog-total-label');
+      const pagBox = document.getElementById('catalog-pagination');
+
+      totalLabel.textContent = `${filteredProducts.length} sản phẩm`;
+
+      if (filteredProducts.length === 0) {
+        grid.innerHTML = `<div class="col-span-full bg-white rounded-2xl border border-[#FADCE3] p-8 text-center text-xs sm:text-sm text-[#8A6872]">Không tìm thấy sản phẩm phù hợp.</div>`;
+        pagBox.innerHTML = '';
+        return;
+      }
+
+      const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
+      if (currentPage > totalPages) currentPage = totalPages;
+      const start = (currentPage - 1) * ITEMS_PER_PAGE;
+      const pageItems = filteredProducts.slice(start, start + ITEMS_PER_PAGE);
+
+      grid.innerHTML = pageItems.map(buildProductCard).join('');
+
+      if (totalPages <= 1) {
+        pagBox.innerHTML = '';
+      } else {
+        let btns = '';
+        for (let i = 1; i <= totalPages; i++) {
+          btns += `
+            <button type="button" onclick="goToCatalogPage(${i})" class="w-9 h-9 rounded-xl text-xs font-extrabold cursor-pointer ${i === currentPage ? 'bg-gradient-to-r from-[#E63963] to-[#FF785A] text-white shadow-2xs' : 'bg-white border border-[#FADCE3] text-[#5C414A] hover:bg-[#FFE8ED]'}">
+              ${i}
+            </button>
+          `;
+        }
+        pagBox.innerHTML = btns;
+      }
+    }
+
+    function goToCatalogPage(page) {
+      currentPage = page;
+      renderCatalogPage();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ==================== TRANG CHI TIẾT SẢN PHẨM (HỖ TRỢ MỞ TRỰC TIẾP QUA URL) ====================
+    let activeDetailState = { product: null, size: '', color: '', qty: 1 };
+
+    function renderUnavailableProductNotice() {
+      navigateTo('detail', false);
+      updateOpenGraphMetadata(null);
+      document.getElementById('detail-breadcrumb-slug').textContent = '';
+      document.getElementById('product-detail-container').innerHTML = `
+        <div class="py-12 px-4 text-center max-w-md mx-auto space-y-4">
+          <div class="w-16 h-16 rounded-full bg-[#FFE8ED] text-[#E63963] flex items-center justify-center text-2xl mx-auto">
+            <i class="fa-solid fa-box-open"></i>
+          </div>
+          <h2 class="text-xl font-extrabold text-[#3B282E]">Sản Phẩm Không Còn Hiển Thị</h2>
+          <p class="text-xs sm:text-sm text-[#6B4E57] leading-relaxed">
+            Liên kết sản phẩm bạn truy cập hiện đã hết hàng, tạm ẩn hoặc không còn kinh doanh tại <strong>THẠCH THẢO DALAT</strong>.
+          </p>
+          <button type="button" onclick="navigateTo('home')" class="inline-flex items-center gap-2 bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 text-white font-bold text-xs px-6 py-3 rounded-xl cursor-pointer transition">
+            <span>Khám Phá Các Mẫu Mới Nhất</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      `;
+    }
+
+    function openProductDetailPage(productId, updateUrl = true) {
+      const product = allProducts.find(p => String(p.id) === String(productId));
+      if (!product || product.is_visible === false) {
+        renderUnavailableProductNotice();
+        return;
+      }
+
+      const sizes = Array.isArray(product.sizes) && product.sizes.length ? product.sizes : ['Freesize'];
+      const colors = Array.isArray(product.colors) && product.colors.length ? product.colors : ['Tiêu chuẩn'];
+      const images = Array.isArray(product.images) && product.images.length ? product.images : ['https://placehold.co/600x750/FFF2F5/3B282E?text=THACH+THAO+DALAT'];
+
+      activeDetailState = { product, size: sizes[0], color: colors[0], qty: 1 };
+      navigateTo('detail', false);
+
+      if (updateUrl) {
+        syncBrowserUrlForProduct(product);
+      }
+      updateOpenGraphMetadata(product);
+
+      const shareUrl = buildProductShareUrl(product);
+      document.getElementById('detail-breadcrumb-slug').textContent = shareUrl;
+
+      const container = document.getElementById('product-detail-container');
+      container.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8">
+          <div class="md:col-span-6 space-y-3">
+            <div class="unified-photo-frame rounded-2xl border border-[#FADCE3]">
+              <img id="detail-main-img" src="${images[0]}" alt="${product.name}">
+            </div>
+            ${images.length > 1 ? `
+              <div class="flex gap-2 overflow-x-auto pb-1">
+                ${images.map(imgUrl => `
+                  <button type="button" onclick="switchDetailMainImage('${imgUrl}')" class="w-16 h-20 rounded-xl border border-[#FADCE3] overflow-hidden shrink-0 cursor-pointer hover:border-[#E63963]">
+                    <img src="${imgUrl}" class="w-full h-full object-contain bg-[#FFF7F9]">
+                  </button>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="md:col-span-6 flex flex-col justify-between space-y-5 text-xs sm:text-sm">
+            <div class="space-y-3.5">
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full">${product.category || 'Thời trang nữ'}</span>
+                  <span class="text-xs text-[#7D5E67]">Kho còn: <strong>${product.stock}</strong> sản phẩm</span>
+                </div>
+
+                <!-- Nút Chia Sẻ nổi bật tại trang chi tiết -->
+                <button type="button" onclick="openShareModal('${product.id}', event)" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FFE8ED] hover:bg-gradient-to-r hover:from-[#E63963] hover:to-[#FF785A] text-[#E63963] hover:text-white border border-[#FAD2DC] text-xs font-bold cursor-pointer transition">
+                  <i class="fa-solid fa-share-nodes"></i>
+                  <span>Chia sẻ</span>
+                </button>
+              </div>
+
+              <h1 class="text-xl sm:text-2xl font-extrabold text-[#3B282E]">${product.name}</h1>
+
+              <div class="bg-gradient-to-r from-[#FFF2F5] to-[#FFF8E8] rounded-2xl p-3.5 flex items-baseline gap-2.5 border border-[#FADCE3]">
+                <span class="text-2xl sm:text-3xl font-extrabold text-[#E63963]">${formatCurrency(product.price)}</span>
+                ${product.original_price && Number(product.original_price) > Number(product.price) ? `<span class="text-sm text-[#A68A93] line-through">${formatCurrency(product.original_price)}</span>` : ''}
+              </div>
+
+              <div>
+                <div class="font-bold text-xs text-[#3B282E] mb-1.5">Chọn màu sắc:</div>
+                <div class="flex flex-wrap gap-2">
+                  ${colors.map((c, idx) => `
+                    <button type="button" onclick="selectDetailOption('color', '${c}', this)" class="opt-color-btn px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer ${idx === 0 ? 'bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white border-transparent shadow-2xs' : 'bg-white text-[#5C414A] border-[#FADCE3]'}">
+                      ${c}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <div>
+                <div class="font-bold text-xs text-[#3B282E] mb-1.5">Chọn kích cỡ:</div>
+                <div class="flex flex-wrap gap-2">
+                  ${sizes.map((s, idx) => `
+                    <button type="button" onclick="selectDetailOption('size', '${s}', this)" class="opt-size-btn px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer ${idx === 0 ? 'bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white border-transparent shadow-2xs' : 'bg-white text-[#5C414A] border-[#FADCE3]'}">
+                      ${s}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <div>
+                <div class="font-bold text-xs text-[#3B282E] mb-1.5">Số lượng:</div>
+                <div class="inline-flex items-center border border-[#FADCE3] rounded-xl overflow-hidden bg-white">
+                  <button type="button" onclick="changeDetailQty(-1)" class="px-3.5 py-2 font-extrabold text-[#E63963] hover:bg-[#FFF2F5] cursor-pointer">-</button>
+                  <span id="detail-qty-display" class="px-4 py-2 font-extrabold text-xs text-[#3B282E]">1</span>
+                  <button type="button" onclick="changeDetailQty(1)" class="px-3.5 py-2 font-extrabold text-[#E63963] hover:bg-[#FFF2F5] cursor-pointer">+</button>
+                </div>
+              </div>
+
+              <div class="border-t border-[#FBE8ED] pt-3">
+                <div class="font-bold text-xs text-[#3B282E] mb-1">Mô tả sản phẩm:</div>
+                <div class="text-xs text-[#6B4E57] leading-relaxed whitespace-pre-line">
+                  ${product.description || 'Chất liệu mềm mại, phom dáng chuẩn đẹp được tuyển chọn bởi THẠCH THẢO DALAT.'}
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+              <button type="button" onclick="addDetailProductToCart(false)" ${Number(product.stock) <= 0 ? 'disabled' : ''} class="bg-[#FFE8ED] hover:bg-[#FFD6DF] disabled:opacity-50 text-[#E63963] font-extrabold text-xs py-3.5 rounded-xl cursor-pointer transition">
+                <i class="fa-solid fa-cart-plus mr-1.5"></i>Thêm Vào Giỏ Hàng
+              </button>
+              <button type="button" onclick="addDetailProductToCart(true)" ${Number(product.stock) <= 0 ? 'disabled' : ''} class="bg-gradient-to-r from-[#E63963] to-[#FF785A] hover:opacity-95 disabled:opacity-50 text-white font-extrabold text-xs py-3.5 rounded-xl cursor-pointer transition shadow-xs">
+                Mua Ngay (COD)
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function switchDetailMainImage(url) {
+      document.getElementById('detail-main-img').src = url;
+    }
+
+    function selectDetailOption(type, val, btn) {
+      activeDetailState[type] = val;
+      const selector = type === 'color' ? '.opt-color-btn' : '.opt-size-btn';
+      document.querySelectorAll(selector).forEach(el => {
+        el.className = `${selector.slice(1)} px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer bg-white text-[#5C414A] border-[#FADCE3]`;
+      });
+      btn.className = `${selector.slice(1)} px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer bg-gradient-to-r from-[#FF758F] to-[#FF8A65] text-white border-transparent shadow-2xs`;
+    }
+
+    function openProductDetailPage(productId, updateUrl = true) {
+      const product = allProducts.find(p => String(p.id) === String(productId));
+      if (!product || product.is_visible === false) {
+        renderUnavailableProductNotice();
+        return;
+      }
+
+      const sizes = Array.isArray(product.sizes) && product.sizes.length ? product.sizes : ['Freesize'];
+      const colors = Array.isArray(product.colors) && product.colors.length ? product.colors : ['Tiêu chuẩn'];
+      const images = Array.isArray(product.images) && product.images.length ? product.images : ['https://placehold.co/600x750/EFECEB/161414?text=THACH+THAO+DALAT'];
+
+      activeDetailState = { product, size: sizes[0], color: colors[0], qty: 1 };
+      navigateTo('detail', false);
+
+      if (updateUrl) {
+        syncBrowserUrlForProduct(product);
+      }
+      updateOpenGraphMetadata(product);
+
+      const shareUrl = buildProductShareUrl(product);
+      document.getElementById('detail-breadcrumb-slug').textContent = shareUrl;
+
+      const container = document.getElementById('product-detail-container');
+      container.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8">
+          <div class="md:col-span-6 space-y-3">
+            <div class="unified-photo-frame rounded-2xl border border-neutral-200">
+              <img id="detail-main-img" src="${images[0]}" alt="${product.name}">
+            </div>
+            ${images.length > 1 ? `
+              <div class="flex gap-2 overflow-x-auto pb-1">
+                ${images.map(imgUrl => `
+                  <button type="button" onclick="switchDetailMainImage('${imgUrl}')" class="w-16 h-20 rounded-xl border border-neutral-300 overflow-hidden shrink-0 cursor-pointer hover:border-[#B84A62]">
+                    <img src="${imgUrl}" class="w-full h-full object-contain bg-[#F8F6F5]">
+                  </button>
+                `).join('')}
+              </div>
+            ` : ''}
+          </div>
+
+          <div class="md:col-span-6 flex flex-col justify-between space-y-5 text-xs sm:text-sm">
+            <div class="space-y-3.5">
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="bg-[#B84A62] text-white text-[11px] font-bold px-2.5 py-0.5 rounded">${product.category || 'Thời trang nữ'}</span>
+                  <span class="text-xs text-neutral-500">Kho còn: <strong>${product.stock}</strong> sản phẩm</span>
+                </div>
+
+                <!-- Nút Chia Sẻ nổi bật tại trang chi tiết -->
+                <button type="button" onclick="openShareModal('${product.id}', event)" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#F8F6F5] hover:bg-[#161414] text-[#161414] hover:text-white border border-neutral-300 text-xs font-bold cursor-pointer transition">
+                  <i class="fa-solid fa-share-nodes text-[#B84A62]"></i>
+                  <span>Chia sẻ</span>
+                </button>
+              </div>
+
+              <h1 class="text-xl sm:text-2xl font-extrabold text-[#161414]">${product.name}</h1>
+
+              <div class="bg-[#F8F6F5] rounded-xl p-3.5 flex items-baseline gap-2.5 border border-neutral-200/60">
+                <span class="text-2xl sm:text-3xl font-extrabold text-[#B84A62]">${formatCurrency(product.price)}</span>
+                ${product.original_price && Number(product.original_price) > Number(product.price) ? `<span class="text-sm text-neutral-400 line-through">${formatCurrency(product.original_price)}</span>` : ''}
+              </div>
+
+              <div>
+                <div class="font-bold text-xs text-[#161414] mb-1.5">Chọn màu sắc:</div>
+                <div class="flex flex-wrap gap-2">
+                  ${colors.map((c, idx) => `
+                    <button type="button" onclick="selectDetailOption('color', '${c}', this)" class="opt-color-btn px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer ${idx === 0 ? 'bg-[#161414] text-white border-[#161414]' : 'bg-white text-neutral-700 border-neutral-300'}">
+                      ${c}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <div>
+                <div class="font-bold text-xs text-[#161414] mb-1.5">Chọn kích cỡ:</div>
+                <div class="flex flex-wrap gap-2">
+                  ${sizes.map((s, idx) => `
+                    <button type="button" onclick="selectDetailOption('size', '${s}', this)" class="opt-size-btn px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer ${idx === 0 ? 'bg-[#161414] text-white border-[#161414]' : 'bg-white text-neutral-700 border-neutral-300'}">
+                      ${s}
+                    </button>
+                  `).join('')}
+                </div>
+              </div>
+
+              <div>
+                <div class="font-bold text-xs text-[#161414] mb-1.5">Số lượng:</div>
+                <div class="inline-flex items-center border border-neutral-300 rounded-xl overflow-hidden bg-white">
+                  <button type="button" onclick="changeDetailQty(-1)" class="px-3.5 py-2 font-extrabold hover:bg-neutral-100 cursor-pointer">-</button>
+                  <span id="detail-qty-display" class="px-4 py-2 font-extrabold text-xs">1</span>
+                  <button type="button" onclick="changeDetailQty(1)" class="px-3.5 py-2 font-extrabold hover:bg-neutral-100 cursor-pointer">+</button>
+                </div>
+              </div>
+
+              <div class="border-t border-neutral-100 pt-3">
+                <div class="font-bold text-xs text-[#161414] mb-1">Mô tả sản phẩm:</div>
+                <div class="text-xs text-neutral-600 leading-relaxed whitespace-pre-line">
+                  ${product.description || 'Chất liệu mềm mại, phom dáng chuẩn đẹp được tuyển chọn bởi THẠCH THẢO DALAT.'}
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+              <button type="button" onclick="addDetailProductToCart(false)" ${Number(product.stock) <= 0 ? 'disabled' : ''} class="bg-neutral-100 hover:bg-neutral-200 disabled:opacity-50 text-[#161414] font-extrabold text-xs py-3.5 rounded-xl cursor-pointer transition">
+                <i class="fa-solid fa-cart-plus mr-1.5"></i>Thêm Vào Giỏ Hàng
+              </button>
+              <button type="button" onclick="addDetailProductToCart(true)" ${Number(product.stock) <= 0 ? 'disabled' : ''} class="bg-[#B84A62] hover:bg-[#9E3A50] disabled:opacity-50 text-white font-extrabold text-xs py-3.5 rounded-xl cursor-pointer transition">
+                Mua Ngay (COD)
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function switchDetailMainImage(url) {
+      document.getElementById('detail-main-img').src = url;
+    }
+
+    function selectDetailOption(type, val, btn) {
+      activeDetailState[type] = val;
+      const selector = type === 'color' ? '.opt-color-btn' : '.opt-size-btn';
+      document.querySelectorAll(selector).forEach(el => {
+        el.className = `${selector.slice(1)} px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer bg-white text-neutral-700 border-neutral-300`;
+      });
+      btn.className = `${selector.slice(1)} px-3.5 py-2 rounded-xl text-xs font-bold border cursor-pointer bg-[#161414] text-white border-[#161414]`;
+    }
+
+    function changeDetailQty(delta) {
+      const maxStock = Number(activeDetailState.product?.stock) || 99;
+      activeDetailState.qty = Math.max(1, Math.min(maxStock, activeDetailState.qty + delta));
+      document.getElementById('detail-qty-display').textContent = activeDetailState.qty;
+    }
+
+    function addDetailProductToCart(goCheckout) {
+      const { product, size, color, qty } = activeDetailState;
+      if (!product) return;
+
+      const existing = cartItems.find(i => i.id === product.id && i.size === size && i.color === color);
+      const img = (Array.isArray(product.images) && product.images[0]) || 'https://placehold.co/300x375/FFF2F5/3B282E?text=TT';
+
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        cartItems.push({ id: product.id, name: product.name, price: Number(product.price), size, color, qty, img });
+      }
+      updateCartUI();
+      if (goCheckout) {
+        proceedToCheckout();
+      } else {
+        notify(`Đã thêm "${product.name}" vào giỏ hàng!`);
+      }
+    }
+
+    // ==================== GIỎ HÀNG & ĐẶT HÀNG FORMSPREE ====================
+    function openCartDrawer() {
+      updateCartUI();
+      document.getElementById('cart-drawer').classList.remove('hidden');
+    }
+
+    function closeCartDrawer() {
+      document.getElementById('cart-drawer').classList.add('hidden');
+    }
+
+    function updateCartUI() {
+      const totalCount = cartItems.reduce((sum, i) => sum + i.qty, 0);
+      document.getElementById('cart-count-badge').textContent = totalCount;
+
+      const listEl = document.getElementById('cart-drawer-items');
+      const totalEl = document.getElementById('cart-drawer-total');
+
+      if (cartItems.length === 0) {
+        listEl.innerHTML = `<div class="text-center py-10 text-neutral-400">Giỏ hàng của bạn đang trống.</div>`;
+        totalEl.textContent = '0đ';
+        return;
+      }
+
+      listEl.innerHTML = cartItems.map((item, idx) => `
+        <div class="flex items-center gap-3 p-2.5 rounded-2xl border border-[#FADCE3] bg-[#FFF7F9]">
+          <img src="${item.img}" class="w-14 h-16 rounded-xl object-contain bg-white border border-[#FADCE3] shrink-0">
+          <div class="flex-1 min-w-0">
+            <div class="font-bold text-[#3B282E] truncate">${item.name}</div>
+            <div class="text-[#7D5E67] text-[11px]">Màu: ${item.color} • Size: ${item.size}</div>
+            <div class="font-extrabold text-[#E63963] mt-0.5">${formatCurrency(item.price)}</div>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <button type="button" onclick="updateCartItemQty(${idx}, -1)" class="w-6 h-6 rounded-lg bg-[#FFE8ED] text-[#E63963] font-bold cursor-pointer">-</button>
+            <span class="font-bold px-1 text-[#3B282E]">${item.qty}</span>
+            <button type="button" onclick="updateCartItemQty(${idx}, 1)" class="w-6 h-6 rounded-lg bg-[#FFE8ED] text-[#E63963] font-bold cursor-pointer">+</button>
+          </div>
+        </div>
+      `).join('');
+
+      const totalMoney = cartItems.reduce((sum, i) => sum + i.price * i.qty, 0);
+      totalEl.textContent = formatCurrency(totalMoney);
+    }
+
+    function updateCartItemQty(idx, delta) {
+      if (!cartItems[idx]) return;
+      cartItems[idx].qty += delta;
+      if (cartItems[idx].qty <= 0) cartItems.splice(idx, 1);
+      updateCartUI();
+    }
+
+    function proceedToCheckout() {
+      if (cartItems.length === 0) {
+        notify('Vui lòng chọn sản phẩm vào giỏ hàng trước!');
+        return;
+      }
+      closeCartDrawer();
+      navigateTo('checkout');
+      document.getElementById('checkout-form-wrapper').classList.remove('hidden');
+      document.getElementById('order-confirmation-view').classList.add('hidden');
+
+      const totalMoney = cartItems.reduce((sum, i) => sum + i.price * i.qty, 0);
+      document.getElementById('checkout-items-summary').innerHTML = `
+        <div class="font-extrabold text-[#3B282E] mb-1">Chi tiết sản phẩm đặt mua:</div>
+        ${cartItems.map(i => `
+          <div class="flex justify-between text-[#5C414A] py-1 border-b border-[#FADCE3]">
+            <span>${i.name} — Màu: <strong>${i.color}</strong>, Size: <strong>${i.size}</strong> (x${i.qty})</span>
+            <span class="font-bold">${formatCurrency(i.price * i.qty)}</span>
+          </div>
+        `).join('')}
+        <div class="flex justify-between font-extrabold text-sm text-[#E63963] pt-1.5">
+          <span>Tổng tiền thanh toán (COD):</span>
+          <span>${formatCurrency(totalMoney)}</span>
+        </div>
+      `;
+    }
+
+    async function handleOrderSubmit(e) {
+      e.preventDefault();
+      if (cartItems.length === 0) return;
+
+      const btn = document.getElementById('btn-confirm-order');
+      btn.disabled = true;
+      btn.textContent = 'Đang xử lý đơn hàng...';
+
+      const name = document.getElementById('ord-name').value.trim();
+      const phone = document.getElementById('ord-phone').value.trim();
+      const address = document.getElementById('ord-address').value.trim();
+      const note = document.getElementById('ord-note').value.trim();
+      const totalMoney = cartItems.reduce((sum, i) => sum + i.price * i.qty, 0);
+      const orderCode = 'TTD-' + Math.floor(100000 + Math.random() * 900000);
+      const itemsText = cartItems.map(i => `${i.name} [Màu: ${i.color} | Size: ${i.size} | SL: ${i.qty}]`).join(' ; ');
+
+      const cfg = getActiveConfig();
+      const fd = new FormData();
+      fd.append('_subject', `[ĐƠN MỚI THẠCH THẢO DALAT] ${orderCode} - ${name} (${phone})`);
+      fd.append('Ma_Don_Hang', orderCode);
+      fd.append('Ho_Ten', name);
+      fd.append('So_Dien_Thoai', phone);
+      fd.append('Dia_Chi', address);
+      fd.append('San_Pham', itemsText);
+      fd.append('Tong_Tien', formatCurrency(totalMoney));
+      fd.append('Ghi_Chu', note || 'Không có');
+      fd.append('Trang_Thai_Thanh_Toan', 'Chưa thanh toán (COD - Chờ xác nhận)');
+
+      try {
+        const res = await fetch(cfg.formspree, {
+          method: 'POST',
+          body: fd,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (!res.ok) throw new Error('Formspree error');
+
+        document.getElementById('checkout-form-wrapper').classList.add('hidden');
+        document.getElementById('order-confirmation-view').classList.remove('hidden');
+        document.getElementById('order-confirmation-details').innerHTML = `
+          <div><strong>Mã đơn hàng:</strong> ${orderCode}</div>
+          <div><strong>Người nhận:</strong> ${name} — ${phone}</div>
+          <div><strong>Địa chỉ:</strong> ${address}</div>
+          <div><strong>Sản phẩm:</strong> ${itemsText}</div>
+          <div><strong>Tổng thanh toán:</strong> <span class="text-[#B84A62] font-extrabold">${formatCurrency(totalMoney)}</span></div>
+          <div><strong>Trạng thái:</strong> Chờ xác nhận (Thanh toán khi nhận hàng)</div>
+        `;
+        const zaloText = encodeURIComponent(`Chào THẠCH THẢO DALAT, mình vừa đặt đơn ${orderCode} (${itemsText}) - SĐT: ${phone}`);
+        document.getElementById('confirm-zalo-btn').href = `https://zalo.me/0792888009?text=${zaloText}`;
+
+        cartItems = [];
+        updateCartUI();
+        e.target.reset();
+        notify('Đặt hàng thành công!');
+      } catch (err) {
+        notify('Gửi đơn hàng thất bại. Vui lòng thử lại hoặc nhắn Zalo 0792888009!');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Đặt Hàng Ngay';
+      }
+    }
+
+    // ==================== QUẢN TRỊ SUPABASE ====================
+    function handleAuthStateChange(session) {
+      adminSession = session;
+      const loginBox = document.getElementById('admin-login-box');
+      const dashBox = document.getElementById('admin-dashboard-box');
+      const headerAdminBtn = document.getElementById('header-admin-btn');
+
+      if (session && session.user) {
+        loginBox.classList.add('hidden');
+        dashBox.classList.remove('hidden');
+        headerAdminBtn.classList.remove('hidden');
+        headerAdminBtn.classList.add('flex');
+        document.getElementById('admin-logged-email').textContent = `Tài khoản: ${session.user.email}`;
+        renderAdminProductTable();
+      } else {
+        loginBox.classList.remove('hidden');
+        dashBox.classList.add('hidden');
+        headerAdminBtn.classList.add('hidden');
+        headerAdminBtn.classList.remove('flex');
+      }
+    }
+
+    async function handleAdminSupabaseLogin(e) {
+      e.preventDefault();
+      if (!supabaseClient) return;
+
+      const email = document.getElementById('admin-email-input').value.trim();
+      const password = document.getElementById('admin-pass-input').value;
+      const btn = document.getElementById('btn-admin-login');
+      btn.disabled = true;
+      btn.textContent = 'Đang đăng nhập...';
+
+      try {
+        const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
+        if (error) throw error;
+        handleAuthStateChange(data.session);
+        notify('Đăng nhập quản trị thành công!');
+      } catch (err) {
+        notify('Sai email hoặc mật khẩu quản trị!');
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Đăng Nhập Hệ Thống';
+      }
+    }
+
+    async function handleAdminLogout() {
+      if (supabaseClient) await supabaseClient.auth.signOut();
+      handleAuthStateChange(null);
+      navigateTo('home');
+      notify('Đã đăng xuất!');
+    }
+
+    function previewSelectedImages(e) {
+      const files = Array.from(e.target.files || []);
+      const box = document.getElementById('admin-images-preview');
+      box.innerHTML = '';
+      files.forEach(file => {
+        const url = URL.createObjectURL(file);
+        const img = document.createElement('img');
+        img.src = url;
+        img.className = 'w-14 h-16 rounded-lg object-contain bg-[#F8F6F5] border border-neutral-300';
+        box.appendChild(img);
+      });
+    }
+
+    async function uploadImagesToSupabaseStorage(files) {
+      const uploadedUrls = [];
+      for (const file of files) {
+        const ext = file.name.split('.').pop();
+        const fileName = `prod_${Date.now()}_${Math.random().toString(36).slice(2, 8)}.${ext}`;
+        const { error: uploadError } = await supabaseClient.storage
+          .from('product-images')
+          .upload(fileName, file, { cacheControl: '3600', upsert: false });
+
+        if (uploadError) throw uploadError;
+
+        const { data: publicUrlData } = supabaseClient.storage
+          .from('product-images')
+          .getPublicUrl(fileName);
+
+        if (publicUrlData && publicUrlData.publicUrl) {
+          uploadedUrls.push(publicUrlData.publicUrl);
+        }
+      }
+      return uploadedUrls;
+    }
+
+    async function handleSaveProductToSupabase(e) {
+      e.preventDefault();
+      if (!supabaseClient || !adminSession) return;
+
+      const btn = document.getElementById('btn-save-product');
+      btn.disabled = true;
+      btn.textContent = 'Đang tải ảnh & đăng sản phẩm...';
+
+      try {
+        const editId = document.getElementById('edit-product-id').value;
+        const name = document.getElementById('prod-name').value.trim();
+        const price = Number(document.getElementById('prod-price').value);
+        const original_price = Number(document.getElementById('prod-original-price').value) || null;
+        const category = document.getElementById('prod-category').value.trim();
+        const stock = Number(document.getElementById('prod-stock').value) || 0;
+        const description = document.getElementById('prod-description').value.trim();
+        const colors = document.getElementById('prod-colors').value.split(',').map(c => c.trim()).filter(Boolean);
+        const sizes = Array.from(document.querySelectorAll('.prod-size-chk:checked')).map(cb => cb.value);
+
+        const is_featured = document.getElementById('prod-featured').checked;
+        const is_new = document.getElementById('prod-is-new').checked;
+        const is_visible = document.getElementById('prod-visible').checked;
+
+        const fileInput = document.getElementById('prod-images-input');
+        const files = Array.from(fileInput.files || []);
+        let finalImages = [...existingEditImages];
+
+        if (files.length > 0) {
+          const newUrls = await uploadImagesToSupabaseStorage(files);
+          finalImages = editId ? [...finalImages, ...newUrls] : newUrls;
+        }
+
+        if (finalImages.length === 0) {
+          notify('Vui lòng chọn ít nhất 1 hình ảnh sản phẩm!');
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-up mr-1.5"></i>Đăng Sản Phẩm Lên Cửa Hàng';
+          return;
+        }
+
+        const payload = {
+          name,
+          price,
+          original_price,
+          category,
+          stock,
+          sizes: sizes.length ? sizes : ['Freesize'],
+          colors: colors.length ? colors : ['Tiêu chuẩn'],
+          description,
+          images: finalImages,
+          is_featured,
+          is_new,
+          is_visible
+        };
+
+        if (editId) {
+          const { error } = await supabaseClient.from('products').update(payload).eq('id', editId);
+          if (error) throw error;
+          notify('Đã cập nhật sản phẩm!');
+        } else {
+          const { error } = await supabaseClient.from('products').insert([payload]);
+          if (error) throw error;
+          notify('Đã đăng sản phẩm mới lên cửa hàng!');
+        }
+
+        resetAdminProductForm();
+        await fetchProductsFromSupabase(false);
+      } catch (err) {
+        console.error(err);
+        notify('Lỗi khi lưu sản phẩm: ' + (err.message || 'Kiểm tra kết nối'));
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa-solid fa-cloud-arrow-up mr-1.5"></i>Đăng Sản Phẩm Lên Cửa Hàng';
+      }
+    }
+
+    function editProductItem(id) {
+      const p = allProducts.find(item => String(item.id) === String(id));
+      if (!p) return;
+
+      document.getElementById('edit-product-id').value = p.id;
+      document.getElementById('admin-form-heading').textContent = 'Chỉnh Sửa Sản Phẩm';
+      document.getElementById('btn-cancel-edit').classList.remove('hidden');
+
+      document.getElementById('prod-name').value = p.name;
+      document.getElementById('prod-price').value = p.price;
+      document.getElementById('prod-original-price').value = p.original_price || '';
+      document.getElementById('prod-category').value = p.category || '';
+      document.getElementById('prod-stock').value = p.stock ?? 0;
+      document.getElementById('prod-colors').value = Array.isArray(p.colors) ? p.colors.join(', ') : '';
+      document.getElementById('prod-description').value = p.description || '';
+      document.getElementById('prod-featured').checked = !!p.is_featured;
+      document.getElementById('prod-is-new').checked = !!p.is_new;
+      document.getElementById('prod-visible').checked = p.is_visible !== false;
+
+      document.querySelectorAll('.prod-size-chk').forEach(cb => {
+        cb.checked = Array.isArray(p.sizes) && p.sizes.includes(cb.value);
+      });
+
+      existingEditImages = Array.isArray(p.images) ? [...p.images] : [];
+      const preview = document.getElementById('admin-images-preview');
+      preview.innerHTML = existingEditImages.map(url => `<img src="${url}" class="w-14 h-16 rounded-lg object-contain bg-[#F8F6F5] border border-neutral-300">`).join('');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function resetAdminProductForm() {
+      document.getElementById('admin-product-form').reset();
+      document.getElementById('edit-product-id').value = '';
+      document.getElementById('admin-form-heading').textContent = 'Đăng Sản Phẩm Mới';
+      document.getElementById('btn-cancel-edit').classList.add('hidden');
+      document.getElementById('admin-images-preview').innerHTML = '';
+      existingEditImages = [];
+    }
+
+    async function toggleProductVisibility(id, currentState) {
+      if (!supabaseClient) return;
+      const { error } = await supabaseClient
+        .from('products')
+        .update({ is_visible: !currentState })
+        .eq('id', id);
+      if (!error) {
+        notify(!currentState ? 'Đã hiển thị sản phẩm' : 'Đã ẩn sản phẩm');
+        await fetchProductsFromSupabase(false);
+      }
+    }
+
+    async function deleteProductFromSupabase(id) {
+      if (!supabaseClient) return;
+      const { error } = await supabaseClient.from('products').delete().eq('id', id);
+      if (!error) {
+        notify('Đã xóa sản phẩm!');
+        await fetchProductsFromSupabase(false);
+      }
+    }
+
+    function renderAdminProductTable() {
+      const container = document.getElementById('admin-products-container');
+      const kw = document.getElementById('admin-search-input').value.trim().toLowerCase();
+      const cat = document.getElementById('admin-filter-cat').value;
+
+      const list = allProducts.filter(p => {
+        if (cat !== 'ALL' && p.category !== cat) return false;
+        if (kw && !p.name.toLowerCase().includes(kw)) return false;
+        return true;
+      });
+
+      document.getElementById('admin-total-products').textContent = list.length;
+
+      if (list.length === 0) {
+        container.innerHTML = `<div class="text-center py-8 text-xs text-neutral-400">Chưa có sản phẩm nào trong danh sách.</div>`;
+        return;
+      }
+
+      container.innerHTML = list.map(p => {
+        const thumb = (Array.isArray(p.images) && p.images[0]) || 'https://placehold.co/200x250/FFF2F5/3B282E?text=TT';
+        const visible = p.is_visible !== false;
+        return `
+          <div class="flex flex-wrap sm:flex-nowrap items-center justify-between gap-3 p-3 rounded-2xl border border-[#FADCE3] bg-[#FFF7F9] text-xs">
+            <div class="flex items-center gap-3 min-w-0 flex-1">
+              <img src="${thumb}" class="w-12 h-14 rounded-xl object-contain bg-white border border-[#FADCE3] shrink-0">
+              <div class="min-w-0">
+                <div class="font-bold text-[#3B282E] truncate">${p.name}</div>
+                <div class="text-[#7D5E67] text-[11px]">${p.category} • Kho: <strong>${p.stock}</strong> • Size: ${(p.sizes || []).join(', ')}</div>
+                <div class="font-extrabold text-[#E63963]">${formatCurrency(p.price)}</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-1.5 shrink-0">
+              <button type="button" onclick="openShareModal('${p.id}', event)" class="px-2.5 py-1.5 rounded-lg bg-[#FFE8ED] hover:bg-[#FFD6DF] border border-[#FAD2DC] text-[#E63963] font-bold cursor-pointer" title="Chia sẻ liên kết sản phẩm">
+                <i class="fa-solid fa-share-nodes"></i>
+              </button>
+              <button type="button" onclick="toggleProductVisibility('${p.id}', ${visible})" class="px-2.5 py-1.5 rounded-lg font-bold cursor-pointer ${visible ? 'bg-emerald-100 text-emerald-800' : 'bg-neutral-200 text-neutral-600'}">
+                ${visible ? 'Đang bán' : 'Đang ẩn'}
+              </button>
+              <button type="button" onclick="editProductItem('${p.id}')" class="px-2.5 py-1.5 rounded-lg bg-[#FFF6E0] text-[#D96B27] font-bold cursor-pointer">
+                Sửa
+              </button>
+              <button type="button" onclick="deleteProductFromSupabase('${p.id}')" class="px-2.5 py-1.5 rounded-lg bg-rose-100 text-[#E63963] font-bold cursor-pointer">
+                Xóa
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function exportProductsBackupJSON() {
+      const blob = new Blob([JSON.stringify(allProducts, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Backup_SanPham_ThachThaoDalat_${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function exportProductsBackupCSV() {
+      const header = 'id,name,price,original_price,category,stock,sizes,colors,is_featured,is_new,is_visible';
+      const rows = allProducts.map(p => `"${p.id}","${p.name}",${p.price},${p.original_price || ''},"${p.category}",${p.stock},"${(p.sizes || []).join('|')}","${(p.colors || []).join('|')}",${p.is_featured},${p.is_new},${p.is_visible}`);
+      const csv = '\uFEFF' + header + '\n' + rows.join('\n');
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `SanPham_ThachThaoDalat_${new Date().toISOString().slice(0, 10)}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function navigateTo(pageName, resetUrl = true) {
+      ['home', 'about', 'products', 'detail', 'contact', 'checkout', 'admin'].forEach(p => {
+        document.getElementById('page-' + p).classList.add('hidden');
+      });
+      document.getElementById('page-' + pageName).classList.remove('hidden');
+
+      document.querySelectorAll('.nav-link').forEach(btn => {
+        btn.classList.toggle('text-[#E63963]', btn.dataset.page === pageName);
+        btn.classList.toggle('font-extrabold', btn.dataset.page === pageName);
+      });
+
+      if (resetUrl && pageName !== 'detail') {
+        resetBrowserUrlToHome();
+        updateOpenGraphMetadata(null);
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleMobileNav() {
+      document.getElementById('mobile-nav-menu').classList.toggle('hidden');
+    }
+
+    function handleInitialRouting() {
+      if (window.location.hash === '#admin' || window.location.search.includes('admin=1')) {
+        navigateTo('admin', false);
+        return;
+      }
+
+      const productIdentifier = parseRequestedProductIdentifier();
+      if (productIdentifier) {
+        const matchedProduct = findProductByIdentifier(productIdentifier);
+        if (matchedProduct && matchedProduct.is_visible !== false) {
+          openProductDetailPage(matchedProduct.id, false);
+        } else {
+          renderUnavailableProductNotice();
+        }
+      }
+    }
+
+    window.addEventListener('popstate', () => {
+      const productIdentifier = parseRequestedProductIdentifier();
+      if (productIdentifier) {
+        const matchedProduct = findProductByIdentifier(productIdentifier);
+        if (matchedProduct && matchedProduct.is_visible !== false) {
+          openProductDetailPage(matchedProduct.id, false);
+        } else {
+          renderUnavailableProductNotice();
+        }
+      } else if (window.location.hash === '#admin') {
+        navigateTo('admin', false);
+      } else {
+        navigateTo('home', false);
+        updateOpenGraphMetadata(null);
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await initSupabaseConnection();
+      handleInitialRouting();
+    });
+  </script>
+</body>
+</html>
